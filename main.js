@@ -131,7 +131,6 @@ function renderSlicesCopy(dict) {
     if (titleEl) {
       titleEl.innerHTML = `<b class="cap">${esc(item.cap)}</b>${esc(item.restTitle)}`;
     }
-    setText(`#sl${k}-desc`, item.desc);
     if (item.badge) {
       setText(`#sl${k}-badge`, item.badge);
     }
@@ -179,7 +178,6 @@ function renderEpisodesHeader(dict) {
   if (titleEl) {
     titleEl.innerHTML = `<span class="cap cap--crimson">${esc(dict.episodes.cap)}</span>${esc(dict.episodes.restTitle)}`;
   }
-  setText("#ep-section-copy", dict.episodes.copy);
 }
 
 function renderInstallSection(dict) {

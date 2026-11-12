@@ -50,11 +50,11 @@
   --crimson-bright: #e11d48;
   --crimson-deep: #7f1d1d;
 
-  /* The 4 Coloured-Truth Slice Surfaces */
-  --slice-red: #7f1d1d;
-  --slice-blue: #0c4a6e;
-  --slice-gold: #6b3410;
-  --slice-purple: #4c1d95;
+  /* The 4 Coloured-Truth Slice Surfaces (Authentic Graphic Hues) */
+  --slice-red: #a61424;
+  --slice-blue: #0b5ed7;
+  --slice-gold: #eab308;
+  --slice-purple: #5b21b6;
 
   /* Authentic Umineko Truth Text Accents */
   --truth-red: #ff4d6d;
@@ -1078,7 +1078,7 @@ svg use {
 
 /* ==========================================================================
    STAGE 2 · THE FOUR COLOURED-TRUTH SLICES + COMPOSITE (#hakikat)
-   Crimson (#7f1d1d) → Cerulean (#0c4a6e) → Gold (#6b3410) → Violet (#4c1d95)
+   Crimson (#a61424) → Cobalt-Azure (#0b5ed7) → Imperial Gold (#eab308) → Violet (#5b21b6)
    ========================================================================== */
 
 .slices {
@@ -1107,12 +1107,14 @@ svg use {
 
 .sl-3 {
   --c: var(--slice-gold);
-  --sl-acc: #fde047;
+  --fg: var(--ink);
+  --shadow-c: rgba(255, 250, 240, 0.72);
+  --sl-acc: var(--ink);
 }
 
 .sl-4 {
   --c: var(--slice-purple);
-  --sl-acc: #d8b4fe;
+  --sl-acc: #e9d5ff;
 }
 
 .sl .body {
@@ -1160,8 +1162,50 @@ svg use {
   font-weight: 600;
   font-size: clamp(14px, min(1.25vw, 2.15vh), 17.5px);
   line-height: 1.42;
-  color: var(--paper-pure);
+  color: var(--fg);
   text-wrap: pretty;
+}
+
+.sl-3 .sl-kicker {
+  background: var(--ink);
+  color: var(--gold-bright);
+  border-color: var(--ink);
+  box-shadow: 3px 3px 0 var(--crimson);
+}
+
+.sl-3 .sl-t .cap {
+  --acc: var(--ink);
+  color: var(--crimson);
+}
+
+.sl-3 .sl-s {
+  font-weight: 700;
+}
+
+.sl-3 .sl-frame:hover {
+  border-color: var(--crimson);
+}
+
+.sl-3 .sl-sublink {
+  color: var(--ink);
+  font-weight: 800;
+  text-decoration-color: var(--crimson);
+}
+
+.sl-3 .sl-sublink:hover {
+  color: var(--crimson);
+}
+
+.sl-3 .btn-ink {
+  border-color: var(--ink);
+  color: var(--gold-bright);
+  box-shadow: 4px 4px 0 var(--crimson);
+}
+
+.sl-3 .btn-ink:hover {
+  background: var(--crimson);
+  color: var(--paper-pure);
+  border-color: var(--ink);
 }
 
 .sl-s--left {
@@ -1175,7 +1219,7 @@ svg use {
   align-items: center;
   gap: clamp(14px, 2.4vw, 30px);
   width: min(100%, 920px);
-  margin-top: clamp(10px, 2.2vh, 20px);
+  margin-top: clamp(16px, 2.8vh, 26px);
   text-align: left;
 }
 
@@ -1313,10 +1357,10 @@ svg use {
 /* Slice 1: Interactive 4-Truth × 3-Language VN Dialogue Box */
 .vn-wrap {
   width: min(100%, 880px);
-  margin-top: clamp(10px, 2vh, 18px);
+  margin-top: clamp(16px, 2.8vh, 26px);
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
 .vn-toolbar {
@@ -1478,34 +1522,40 @@ svg use {
 .gal-tab {
   padding: 5px 11px;
   border-radius: 999px;
-  background: var(--ink);
-  border: 2px solid rgba(254, 224, 71, 0.42);
+  background: rgba(10, 3, 6, 0.92);
+  border: 2px solid var(--ink);
   font-family: var(--font-mono);
   font-size: 11.5px;
   font-weight: 700;
-  color: var(--paper-soft);
-  transition: background 0.16s ease, color 0.16s ease, border-color 0.16s ease;
+  color: var(--paper-pure);
+  transition: background 0.16s ease, color 0.16s ease, border-color 0.16s ease, transform 0.16s var(--ease);
+}
+
+.gal-tab:hover {
+  transform: translateY(-1px);
+  border-color: var(--crimson);
 }
 
 .gal-tab[aria-pressed="true"] {
-  background: var(--gold-bright);
-  color: var(--ink-deep-text);
-  border-color: var(--paper-pure);
+  background: var(--crimson);
+  color: var(--paper-pure);
+  border-color: var(--ink);
+  box-shadow: 3px 3px 0 var(--ink);
 }
 
 .gal-caption {
   font-size: 14px;
   line-height: 1.42;
-  color: var(--paper-pure);
-  font-weight: 600;
+  color: var(--fg);
+  font-weight: 700;
   text-wrap: pretty;
 }
 
 .gal-hint {
   font-family: var(--font-mono);
   font-size: 11px;
-  font-weight: 700;
-  color: var(--gold-soft);
+  font-weight: 800;
+  color: #260b17;
   letter-spacing: 0.04em;
 }
 
@@ -1758,6 +1808,11 @@ html:not(.js) .slice-snap {
   text-align: left;
 }
 
+.js .sl-3 .lab[data-a="row"] {
+  background: rgba(255, 250, 240, 0.34);
+  border: 1.5px solid rgba(10, 3, 6, 0.24);
+}
+
 .js .slices-stage.is-comp .sl .lab {
   opacity: 1;
   pointer-events: auto;
@@ -1823,6 +1878,18 @@ html:not(.js) .slice-snap {
   background: var(--gold-bright);
   color: var(--ink-deep-text);
   border-color: var(--paper-pure);
+}
+
+.sl-3 .lab-cta {
+  color: var(--gold-bright);
+  border-color: var(--ink);
+  box-shadow: 3px 3px 0 var(--crimson);
+}
+
+.sl-3 .lab-cta:hover {
+  background: var(--crimson);
+  color: var(--paper-pure);
+  border-color: var(--ink);
 }
 
 .js .sl .lab[data-a="row"] .lab-cta {

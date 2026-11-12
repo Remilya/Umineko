@@ -246,7 +246,6 @@ export const content = {
           eyebrow: "I · MANTIK VE KAPALI ODA",
           cap: "K",
           restTitle: "ırmızı, Mavi, Altın ve Mor Gerçekler",
-          desc: "Umineko okuru doğrudan dedektif koltuğuna oturtan bir cinayet bilmecesi. Sekiz bölüm boyunca kurulan kilitli oda tanımlarını ve renkli gerçek düellolarını, tek bir ipucunu bile kaydırmadan Türkçeye aktardım.",
           shortLabel: "Renkli Gerçekler",
           compSub: "Mantık ve Kapalı Oda",
           primaryLabel: "Bölümleri İncele ↓",
@@ -261,11 +260,11 @@ export const content = {
           eyebrow: "II · QUESTION & ANSWER ARCS",
           cap: "Q",
           restTitle: "uestion ve Answer Arcs Bir Arada",
-          desc: "Steam ve GOG'daki iki ana paketi kapsar. Soru Arkları (Ep. 1-4) ile Cevap Arkları / Chiru (Ep. 5-8) bölümlerini, Çay Partileri, gizli '????' sahneleri ve ipucu menüleriyle birlikte Türkçe oynayabilirsin.",
           pills: [
             "Question Arcs (Ep. 1-4)",
             "Answer Arcs / Chiru (Ep. 5-8)",
-            "Çay Partileri ve ????"
+            "Çay Partileri ve ????",
+            "Steam · GOG"
           ],
           shortLabel: "Question & Answer",
           compSub: "1-8. Bölümler",
@@ -281,7 +280,6 @@ export const content = {
           eyebrow: "III · GÖRSEL UYARLAMA VE TİPOGRAFİ",
           cap: "O",
           restTitle: "yun İçi Görseller ve Kanji Uyumu",
-          desc: "Ana menüleri, bölüm logolarını, 8. Bölüm Cadılar Bayramı bilmecelerini ve kapanış parşömenlerini Türkçeleştirdim. İsim açıklamalarındaki Japonca Kanji karakterleri de satır içinde bozulmadan görünüyor.",
           shortLabel: "Görsel ve Arayüz",
           compSub: "Menüler ve Bilmeceler",
           primaryLabel: "Görseli Büyüt",
@@ -297,7 +295,6 @@ export const content = {
           cap: "E",
           restTitle: "p. 1 ve Ep. 2 Mangalarının Çevirmeninden",
           badge: "Türkçe Çeviri ve Balon Dizgisi: Remilya",
-          desc: "Görsel romandan önce serinin 1. ve 2. Bölüm mangalarının Türkçe çevirisini ve balon dizgisini hazırladım. Rokkenjima'nın diline ve karakterlerin konuşma tarzına mangalardan aşina olduğum için oyun metninde de aynı terminolojiyi korudum.",
           shortLabel: "Manga Çevirisi",
           compSub: "Ep. 1 ve Ep. 2 Türkçe Manga",
           primaryLabel: "Ep. 1 Mangayı Oku ↗",
@@ -313,7 +310,6 @@ export const content = {
       eyebrow: "ROKKENJIMA · 4 EKİM 1986",
       cap: "B",
       restTitle: "ölüm Rehberi (Ep. 1-8)",
-      copy: "4 Ekim 1986'da fırtınayla dış dünyadan kopan Rokkenjima Adası'ndaki sekiz oyun tahtası. Kartlara tıklayarak veya kaydırarak bölümler arasında gezinebilirsin.",
       prevAria: "Önceki bölüm",
       nextAria: "Sonraki bölüm",
       statusLabel: "Question & Answer Arcs · Çay Partisi ve ???? Dahil",
@@ -455,14 +451,14 @@ export const content = {
           icon: "i-book",
           label: "Umineko Ep. 1 & Ep. 2 Türkçe Manga",
           handle: "remilya.dev/#translations",
-          desc: "Görsel romandan önce çevirisini ve balon dizgisini yaptığım mangalar",
+          desc: "1. ve 2. Bölüm mangalarının Türkçe çevirisi",
           href: RELEASE_INFO.remilyaMangaUrl
         },
         {
           icon: "i-quill",
           label: "Higurashi When They Cry TR",
           handle: "remilya.dev/Higurashi",
-          desc: "Serinin ilk halkası için hazırladığım ana ve ek bölümler Türkçe yaması",
+          desc: "Ana ve ek bölümler dahil Higurashi Türkçe yaması",
           href: "https://remilya.dev/Higurashi/"
         },
         {
@@ -566,7 +562,6 @@ export const content = {
           eyebrow: "I · LOGIC & CLOSED ROOMS",
           cap: "R",
           restTitle: "ed, Blue, Golden & Purple Truths",
-          desc: "Umineko puts the reader directly in the detective's seat. Every closed-room definition and colored truth clash across all eight episodes was translated into Turkish without shifting a single clue.",
           shortLabel: "Colored Truths",
           compSub: "Logic & Closed Rooms",
           primaryLabel: "Browse Episodes ↓",
@@ -581,11 +576,11 @@ export const content = {
           eyebrow: "II · QUESTION & ANSWER ARCS",
           cap: "Q",
           restTitle: "uestion & Answer Arcs Included",
-          desc: "Covers both main releases on Steam and GOG. Play Question Arcs (Ep. 1-4) and Answer Arcs / Chiru (Ep. 5-8) in Turkish, including Tea Parties, hidden '????' chapters, and Tips.",
           pills: [
             "Question Arcs (Ep. 1-4)",
             "Answer Arcs / Chiru (Ep. 5-8)",
-            "Tea Parties & ????"
+            "Tea Parties & ????",
+            "Steam · GOG"
           ],
           shortLabel: "Question & Answer",
           compSub: "Episodes 1-8",
@@ -601,7 +596,6 @@ export const content = {
           eyebrow: "III · UI, RIDDLES & KANJI",
           cap: "L",
           restTitle: "ocalized UI, Riddles & Kanji Support",
-          desc: "Title menus, chapter logos, Episode 8's Halloween riddle cards, and ending scrolls are adapted into Turkish while keeping inline Japanese Kanji characters intact for name wordplay.",
           shortLabel: "UI & Riddles",
           compSub: "Menus & Ending Scrolls",
           primaryLabel: "Enlarge Preview",
@@ -617,7 +611,6 @@ export const content = {
           cap: "F",
           restTitle: "rom the Ep. 1 & Ep. 2 Manga Translator",
           badge: "Turkish Translation & Typesetting: Remilya",
-          desc: "Before working on the visual novels, I translated and typeset the Episode 1 and Episode 2 manga adaptations into Turkish. That groundwork kept character voices and Rokkenjima terminology consistent across the game script.",
           shortLabel: "Manga Translation",
           compSub: "Ep. 1 & Ep. 2 Turkish Manga",
           primaryLabel: "Read Ep. 1 Manga (TR) ↗",
@@ -633,7 +626,6 @@ export const content = {
       eyebrow: "ROKKENJIMA · OCTOBER 4, 1986",
       cap: "E",
       restTitle: "pisode Guide (Ep. 1-8)",
-      copy: "Eight game boards set on storm-locked Rokkenjima Island on October 4, 1986. Click or swipe through the cards to explore each episode.",
       prevAria: "Previous episode",
       nextAria: "Next episode",
       statusLabel: "Question & Answer Arcs · Tea Party & ???? Included",
