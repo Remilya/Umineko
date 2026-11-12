@@ -1,7 +1,6 @@
 import {
   STORAGE_KEY,
   SUPPORTED_LOCALES,
-  RELEASE_INFO,
   content,
   remilyaRoutes
 } from "./js/content.js";
@@ -9,7 +8,6 @@ import { initDeck } from "./js/deck.js";
 import { initSlices } from "./js/slices.js";
 import {
   initEpisodeGrimoire,
-  initCopyHashes,
   initAtmosphere
 } from "./js/showcase.js";
 import { initRemiliaCursor } from "./js/cursor.js";
@@ -205,13 +203,6 @@ function renderInstallSection(dict) {
   setText("#inst-col-a", dict.install.colAnswer);
   setText("#inst-step3", dict.install.step3);
 
-  document.querySelectorAll("[data-copy-label]").forEach((el) => {
-    const btn = el.closest("[data-copy-hash]");
-    if (!btn || !btn.classList.contains("is-copied")) {
-      el.textContent = dict.install.copyHash;
-    }
-  });
-
   const tbody = $("#inst-matrix-body");
   if (tbody) {
     tbody.innerHTML = dict.install.rows
@@ -363,7 +354,6 @@ function bootstrap() {
   deckApi = initDeck({ slicesSectionId: "hakikat", sliceSteps: 5 });
   slicesApi = initSlices(deckApi, currentLocale);
   episodesApi = initEpisodeGrimoire(currentLocale);
-  initCopyHashes(() => currentLocale);
   initRemiliaCursor();
   initAtmosphere();
 
@@ -374,14 +364,6 @@ function bootstrap() {
         applyLocale(targetLocale, { announce: true, syncQuoteLang: true });
       }
     });
-  });
-
-  // Expose release constants to data-release-href links if needed
-  document.querySelectorAll("[data-hash-target]").forEach((el) => {
-    const key = el.dataset.hashTarget;
-    if (RELEASE_INFO.hashes[key]) {
-      el.dataset.copyHash = RELEASE_INFO.hashes[key];
-    }
   });
 }
 

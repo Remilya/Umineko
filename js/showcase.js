@@ -174,39 +174,6 @@ export function initEpisodeGrimoire(initialLocale = "tr") {
   };
 }
 
-export function initCopyHashes(getLocale) {
-  document.querySelectorAll("[data-copy-hash]").forEach((btn) => {
-    let timer = 0;
-    btn.addEventListener("click", async () => {
-      const hash = btn.dataset.copyHash;
-      if (!hash) return;
-      try {
-        await navigator.clipboard.writeText(hash);
-      } catch {
-        const ta = document.createElement("textarea");
-        ta.value = hash;
-        ta.style.position = "fixed";
-        ta.style.opacity = "0";
-        document.body.appendChild(ta);
-        ta.select();
-        document.execCommand("copy");
-        ta.remove();
-      }
-      const loc = getLocale ? getLocale() : "tr";
-      const dict = content[loc] || content.tr;
-      const labelEl = btn.querySelector("[data-copy-label]") || btn;
-      labelEl.textContent = dict.install.copiedHash;
-      btn.classList.add("is-copied");
-      window.clearTimeout(timer);
-      timer = window.setTimeout(() => {
-        const curDict = content[getLocale ? getLocale() : "tr"] || content.tr;
-        labelEl.textContent = curDict.install.copyHash;
-        btn.classList.remove("is-copied");
-      }, 2000);
-    });
-  });
-}
-
 export function initAtmosphere() {
   const reduceMotion = window.matchMedia(
     "(prefers-reduced-motion: reduce)"
