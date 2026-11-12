@@ -203,9 +203,9 @@ export function initSlices(deckApi, initialLocale = "tr") {
             ],
             body: {
               l: l + (L ? 20 : clamp(18, W * 0.04, 56)),
-              t: 14,
+              t: 58,
               r: clamp(32, W * 0.055, 76),
-              b: 14
+              b: 16
             }
           });
         } else {
@@ -259,7 +259,7 @@ export function initSlices(deckApi, initialLocale = "tr") {
             ],
             body: {
               l: 14,
-              t: t + (A ? 12 : 14),
+              t: t + (A ? 14 : 56),
               r: 14,
               b: 12
             }

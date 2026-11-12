@@ -447,7 +447,7 @@ svg use {
 }
 
 /* ==========================================================================
-   FIXED HEADER BAR (.lnav)
+   FIXED FLOATING TRANSPARENT HEADER (.lnav)
    ========================================================================== */
 
 .lnav {
@@ -457,8 +457,14 @@ svg use {
   right: 0;
   z-index: 80;
   height: var(--nav-h);
-  background: var(--ink);
-  border-bottom: var(--border-w) solid var(--gold-bright);
+  background: linear-gradient(
+    180deg,
+    rgba(10, 3, 6, 0.68) 0%,
+    rgba(10, 3, 6, 0.26) 66%,
+    rgba(10, 3, 6, 0) 100%
+  );
+  border-bottom: 0;
+  pointer-events: none;
 }
 
 .lnav-in {
@@ -471,6 +477,12 @@ svg use {
   gap: 18px;
 }
 
+.brand,
+.lnav nav,
+.acts {
+  pointer-events: auto;
+}
+
 .brand {
   display: inline-flex;
   align-items: center;
@@ -481,9 +493,10 @@ svg use {
 }
 
 .brand img {
-  width: 34px;
-  height: 34px;
+  width: 32px;
+  height: 32px;
   object-fit: contain;
+  filter: drop-shadow(0 2px 6px rgba(10, 3, 6, 0.85));
   transition: transform 0.18s var(--ease);
 }
 
@@ -493,9 +506,10 @@ svg use {
 
 .brand-name {
   font-weight: 800;
-  font-size: 16px;
-  letter-spacing: 0.08em;
+  font-size: 15.5px;
+  letter-spacing: 0.09em;
   color: var(--paper-pure);
+  text-shadow: 0 2px 8px rgba(10, 3, 6, 0.92), 0 1px 2px rgba(10, 3, 6, 0.95);
 }
 
 .brand-name em {
@@ -504,14 +518,7 @@ svg use {
 }
 
 .brand-sub {
-  padding-left: 10px;
-  border-left: 2px solid rgba(250, 204, 21, 0.32);
-  font-family: var(--font-mono);
-  font-size: 11.5px;
-  font-weight: 600;
-  color: var(--gold-soft);
-  letter-spacing: 0.03em;
-  white-space: nowrap;
+  display: none;
 }
 
 .lnav nav {
@@ -522,14 +529,15 @@ svg use {
 }
 
 .lnav nav a {
-  color: var(--paper-soft);
+  color: rgba(255, 250, 240, 0.9);
   text-decoration: none;
-  font-size: 13px;
+  font-size: 12.5px;
   font-weight: 800;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
-  padding: 6px 0;
-  border-bottom: 3px solid transparent;
+  padding: 5px 0;
+  border-bottom: 2px solid transparent;
+  text-shadow: 0 2px 8px rgba(10, 3, 6, 0.92), 0 1px 2px rgba(10, 3, 6, 0.98);
   transition: color 0.18s ease, border-color 0.18s ease;
 }
 
@@ -549,18 +557,20 @@ svg use {
 .lang-switch {
   display: inline-flex;
   padding: 2px;
-  background: var(--ink-raise);
-  border: 2px solid var(--gold-bright);
+  background: rgba(10, 3, 6, 0.52);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 250, 240, 0.22);
   border-radius: 999px;
 }
 
 .locale-button {
-  min-width: 34px;
-  height: 28px;
-  padding: 0 9px;
+  min-width: 32px;
+  height: 26px;
+  padding: 0 8px;
   border-radius: 999px;
   font-family: var(--font-mono);
-  font-size: 12px;
+  font-size: 11.5px;
   font-weight: 700;
   letter-spacing: 0.05em;
   color: var(--paper-soft);
@@ -576,13 +586,15 @@ svg use {
 .ib {
   display: inline-grid;
   place-items: center;
-  width: 34px;
-  height: 34px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
-  background: var(--ink-raise);
-  color: var(--gold-soft);
-  border: 2px solid var(--gold-border);
-  transition: transform 0.18s var(--ease), background 0.18s ease;
+  background: rgba(10, 3, 6, 0.52);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: var(--paper-pure);
+  border: 1px solid rgba(255, 250, 240, 0.22);
+  transition: transform 0.18s var(--ease), background 0.18s ease, border-color 0.18s ease;
 }
 
 .ib:hover {
@@ -1677,7 +1689,7 @@ html:not(.js) .slice-snap {
   position: absolute;
   left: 0;
   right: 0;
-  top: var(--nav-h);
+  top: 0;
   bottom: 0;
   overflow: hidden;
   background: var(--ink);
@@ -1745,35 +1757,7 @@ html:not(.js) .slice-snap {
 }
 
 .js .comp-banner {
-  display: block;
-  position: absolute;
-  top: calc(var(--nav-h) + 12px);
-  left: 50%;
-  transform: translate(-50%, -8px);
-  z-index: 30;
-  padding: 6px 16px;
-  background: var(--ink);
-  color: var(--gold-bright);
-  border: 2.5px solid var(--gold-bright);
-  box-shadow: 4px 4px 0 var(--crimson);
-  font-family: var(--font-mono);
-  font-size: 11.5px;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  white-space: nowrap;
-  max-width: calc(100vw - 32px);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.25s ease, transform 0.3s var(--ease);
-}
-
-.js .slices-stage.is-comp .comp-banner {
-  opacity: 1;
-  transform: translate(-50%, 0);
-  transition-delay: 0.22s;
+  display: none;
 }
 
 .js .slices-stage.is-comp .sl {
