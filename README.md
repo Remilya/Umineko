@@ -6,6 +6,8 @@ Yama `07th-Mod` (PS3 seslendirme ve 1080p grafik paketi) altyapısı üzerinde �
 
 **Çeviri ve görsel uyarlama:** [@Remilya](https://github.com/Remilya) · [remilya.dev](https://remilya.dev)
 
+> **Bilgilendirme:** Bu yamanın çevirisinde LLM (**Argon 4**, **Carbon 4** ve **Gemini**) kullanılmıştır. Bununla ilgili bir probleminiz varsa lütfen yamayı kullanmayınız.
+
 ## Kurulum
 
 Türkçe yama düz Steam veya GOG sürümüne doğrudan kurulmaz; önce oyunların üzerine PS3 çizimlerini, seslendirmeyi ve güncellenmiş oyun motorunu ekleyen resmi [07th-Mod Kurulum Aracı](https://wiki.07th-mod.com/Umineko/Umineko-Part-3a-Cross-Platform-Installer/) kurulmalıdır.
