@@ -192,6 +192,7 @@ function renderInstallSection(dict) {
   setText("#inst-exe-meta", dict.install.exeMeta);
   setText("#inst-exe-desc", dict.install.exeDesc);
   setText("#inst-exe-btn-text", dict.install.exeBtn);
+  setText("#inst-llm-note", dict.install.llmNote);
   setText("#inst-vt-badge", dict.install.vtBadge);
   setText("#inst-manual-title", dict.install.manualTitle);
   setText("#inst-qzip-label", dict.install.qZipLabel);

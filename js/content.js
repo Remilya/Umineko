@@ -399,6 +399,7 @@ export const content = {
       exeMeta: "Önerilen · Windows (64-bit) · Otomatik Yedekli",
       exeDesc: "Steam ve GOG klasörlerini otomatik bulur, 07th-Mod kurulumunu doğrular ve dosyaları yedekleyerek yamayı kurar.",
       exeBtn: "Kurulum Aracını İndir",
+      llmNote: "Çeviride LLM (Argon 4, Carbon 4 ve Gemini) kullanılmıştır. Bununla probleminiz varsa lütfen yamayı kullanmayınız.",
       vtBadge: "VirusTotal Temiz ↗",
       copyHash: "SHA-256 Kopyala",
       copiedHash: "Kopyalandı ✓",
@@ -443,7 +444,7 @@ export const content = {
       eyebrow: "REMILYA.DEV · BAĞIMSIZ ÇEVİRİ",
       cap: "H",
       restTitle: "akkında ve Diğer Çeviriler",
-      copy: "Bu yama kâr amacı gütmeyen bir hayran çevirisi. Orijinal oyun dosyalarını içermez, çalışması için Steam veya GOG sürümü gerekir.",
+      copy: "Kâr amacı gütmeyen hayran çevirisi, orijinal oyun dosyalarını içermez. Çeviride LLM (Argon 4, Carbon 4 ve Gemini) kullanılmıştır. Bununla probleminiz varsa lütfen yamayı kullanmayınız.",
       creditsTitle: "EMEK VE TEŞEKKÜR",
       creditsText: "Orijinal Eser: 07th Expansion / Ryukishi07 · PS3 Uyarlaması: Alchemist · Motor ve Grafik Altyapısı: 07th-Mod Topluluğu · Türkçe Çeviri, Görsel Uyarlama ve Kurulum Aracı: Remilya.",
       cards: [
@@ -715,6 +716,7 @@ export const content = {
       exeMeta: "Recommended · Windows (64-bit) · Auto-Backup",
       exeDesc: "Finds Steam and GOG folders automatically, verifies 07th-Mod, and backs up files before applying the patch.",
       exeBtn: "Download Installer",
+      llmNote: "LLMs (Argon 4, Carbon 4, and Gemini) were used in this translation. If you have an issue with that, please do not use this patch.",
       vtBadge: "VirusTotal Clean ↗",
       copyHash: "Copy SHA-256",
       copiedHash: "Copied ✓",
@@ -759,7 +761,7 @@ export const content = {
       eyebrow: "REMILYA.DEV · FAN TRANSLATION",
       cap: "A",
       restTitle: "bout & Other Translations",
-      copy: "This is a free, non-commercial fan translation. It contains no original game files and requires the Steam or GOG release to run.",
+      copy: "Free, non-commercial fan patch containing no original game files. LLMs (Argon 4, Carbon 4, and Gemini) were used in this translation. If you have an issue with that, please do not use this patch.",
       creditsTitle: "CREDITS & ACKNOWLEDGEMENTS",
       creditsText: "Original Work: 07th Expansion / Ryukishi07 · PS3 Release: Alchemist · Engine & HD Modding Framework: 07th-Mod Team · Turkish Translation, Image Editing & Installer: Remilya.",
       cards: [
