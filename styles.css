@@ -133,8 +133,31 @@ button {
   color: inherit;
   background: none;
   border: 0;
-  cursor: pointer;
+  cursor: var(--cur-pointer, pointer);
   text-align: inherit;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  :root {
+    --cur-normal: url("assets/cursor-remilia-normal.png") 0 0, auto;
+    --cur-pointer: url("assets/cursor-remilia-normal.png") 0 0, pointer;
+    --cur-text: url("assets/cursor-remilia-text.png") 3 7, text;
+  }
+
+  html,
+  body {
+    cursor: var(--cur-normal);
+  }
+
+  body :where(h1, h2, h3, h4, p, blockquote, li, td, th, code, .ep-stats, .ep-status, .ep-chip, .vn-speaker, .vn-badge, .flow-chip, .gal-hint, input[type="text"], textarea):not(.sliv),
+  body :where(h1, h2, h3, h4, p, blockquote, li, td, th):not(.sliv) :where(*) {
+    cursor: var(--cur-text);
+  }
+
+  body :is(a, button, [role="button"], summary, .sl.is-sliver, .slices-stage.is-comp .sl),
+  body :is(a, button, [role="button"], .sl.is-sliver, .slices-stage.is-comp .sl) * {
+    cursor: var(--cur-pointer);
+  }
 }
 
 ul,
@@ -1646,7 +1669,7 @@ html:not(.js) .slice-snap {
 }
 
 .js .sl.is-sliver {
-  cursor: pointer;
+  cursor: var(--cur-pointer, pointer);
 }
 
 .js .sl .sliv {
@@ -1704,7 +1727,7 @@ html:not(.js) .slice-snap {
 }
 
 .js .slices-stage.is-comp .sl {
-  cursor: pointer;
+  cursor: var(--cur-pointer, pointer);
 }
 
 .js .sl .lab {
@@ -2216,7 +2239,7 @@ html:not(.js) .slice-snap {
 .exe-thumb {
   display: block;
   padding: 0;
-  cursor: pointer;
+  cursor: var(--cur-pointer, pointer);
   border: 2px solid var(--gold-bright);
   border-radius: 6px;
   overflow: hidden;

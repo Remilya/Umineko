@@ -446,7 +446,7 @@ export function initAtmosphere() {
       x > -200 &&
       strength > 0.03
     ) {
-      spawn(x, y, strength);
+      spawn(x + 18, y + 18, strength);
       lastSpawn = now;
     }
 

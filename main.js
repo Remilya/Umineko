@@ -12,6 +12,7 @@ import {
   initCopyHashes,
   initAtmosphere
 } from "./js/showcase.js";
+import { initRemiliaCursor } from "./js/cursor.js";
 
 const esc = (s) =>
   String(s).replace(/[&<>"']/g, (c) =>
@@ -364,6 +365,7 @@ function bootstrap() {
   slicesApi = initSlices(deckApi, currentLocale);
   episodesApi = initEpisodeGrimoire(currentLocale);
   initCopyHashes(() => currentLocale);
+  initRemiliaCursor();
   initAtmosphere();
 
   document.querySelectorAll(".locale-button").forEach((btn) => {
