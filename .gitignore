@@ -1,0 +1,7 @@
+installer/native_win32/build/
+*.obj
+*.res
+*.pdb
+*.ilk
+.DS_Store
+Thumbs.db

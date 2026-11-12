@@ -1,0 +1,41 @@
+#include <windows.h>
+#include "resource.h"
+
+#pragma code_page(65001)
+
+IDI_APP_ICON    ICON    "..\\assets\\icon_native.ico"
+IDR_HEADER_LOGO BITMAP  "..\\assets\\header_logo.bmp"
+1               RT_MANIFEST "app.manifest"
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041f04b0"
+        BEGIN
+            VALUE "CompanyName", "Remilya (remilya.dev)"
+            VALUE "FileDescription", "Umineko When They Cry - Türkçe Yama Kurulum Aracı"
+            VALUE "FileVersion", "1.0.0.0"
+            VALUE "InternalName", "Umineko_TR_Kurulum"
+            VALUE "LegalCopyright", "Copyright (C) 2026 Remilya (https://remilya.dev)"
+            VALUE "OriginalFilename", "Umineko_TR_Kurulum.exe"
+            VALUE "ProductName", "Umineko When They Cry Türkçe Yama"
+            VALUE "ProductVersion", "1.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x41f, 1200
+    END
+END
