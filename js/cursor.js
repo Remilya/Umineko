@@ -27,7 +27,7 @@ const FRAME_MS = 83;
 
 const SELECTOR_NORMAL_BASE = 'html[data-cur="__F__"], html[data-cur="__F__"] body';
 const SELECTOR_TEXT = [
-  'html[data-cur="__F__"] body :where(h1, h2, h3, h4, p, blockquote, li, td, th, code, .ep-stats, .ep-status, .ep-chip, .vn-speaker, .vn-badge, .flow-chip, .gal-hint, input[type="text"], textarea):not(.sliv)',
+  'html[data-cur="__F__"] body :where(h1, h2, h3, h4, p, blockquote, li, td, th, code, .ep-stats, .ep-chip, .vn-speaker, .vn-badge, .flow-chip, .gal-hint, input[type="text"], textarea):not(.sliv)',
   'html[data-cur="__F__"] body :where(h1, h2, h3, h4, p, blockquote, li, td, th):not(.sliv) :where(*)'
 ].join(", ");
 const SELECTOR_INTERACTIVE = [

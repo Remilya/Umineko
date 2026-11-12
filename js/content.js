@@ -312,7 +312,6 @@ export const content = {
       restTitle: "ölüm Rehberi (Ep. 1-8)",
       prevAria: "Önceki bölüm",
       nextAria: "Sonraki bölüm",
-      statusLabel: "Question & Answer Arcs · Çay Partisi ve ???? Dahil",
       ctaLabel: "Yamayı İndir ↓",
       items: [
         {
@@ -627,7 +626,6 @@ export const content = {
       restTitle: "pisode Guide (Ep. 1-8)",
       prevAria: "Previous episode",
       nextAria: "Next episode",
-      statusLabel: "Question & Answer Arcs · Tea Party & ???? Included",
       ctaLabel: "Get the Patch ↓",
       items: [
         {

@@ -26,7 +26,6 @@ export function initEpisodeGrimoire(initialLocale = "tr") {
   const subEl = document.querySelector("#ep-active-sub");
   const noteEl = document.querySelector("#ep-active-note");
   const truthsEl = document.querySelector("#ep-active-truths");
-  const statusEl = document.querySelector("#ep-active-status");
   const ctaEl = document.querySelector("#ep-active-cta");
   const countEl = document.querySelector("#ep-count");
 
@@ -77,7 +76,6 @@ export function initEpisodeGrimoire(initialLocale = "tr") {
         })
       );
     }
-    if (statusEl) statusEl.textContent = dict.episodes.statusLabel;
     if (ctaEl) ctaEl.textContent = dict.episodes.ctaLabel;
     if (countEl) {
       countEl.textContent = `0${activeIdx + 1} / 0${total}`;

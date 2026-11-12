@@ -149,7 +149,7 @@ button {
     cursor: var(--cur-normal);
   }
 
-  body :where(h1, h2, h3, h4, p, blockquote, li, td, th, code, .ep-stats, .ep-status, .ep-chip, .vn-speaker, .vn-badge, .flow-chip, .gal-hint, input[type="text"], textarea):not(.sliv),
+  body :where(h1, h2, h3, h4, p, blockquote, li, td, th, code, .ep-stats, .ep-chip, .vn-speaker, .vn-badge, .flow-chip, .gal-hint, input[type="text"], textarea):not(.sliv),
   body :where(h1, h2, h3, h4, p, blockquote, li, td, th):not(.sliv) :where(*) {
     cursor: var(--cur-text);
   }
@@ -2188,18 +2188,11 @@ html:not(.js) .slice-snap {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 12px;
   margin-top: 14px;
   padding-top: 12px;
   border-top: 2px solid rgba(250, 204, 21, 0.2);
-}
-
-.ep-status {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--gold-soft);
 }
 
 @media (max-width: 860px) {
