@@ -1,0 +1,26 @@
+{
+  "name": "Umineko: Martılar Ağladığında — Türkçe Yama",
+  "short_name": "Umineko TR",
+  "description": "Umineko When They Cry Soru ve Cevap Arkları (1-8. Bölümler) için 07th-Mod uyumlu eksiksiz Türkçe yama.",
+  "start_url": "/Umineko/",
+  "display": "standalone",
+  "background_color": "#0a0306",
+  "theme_color": "#0a0306",
+  "icons": [
+    {
+      "src": "assets/favicon-64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

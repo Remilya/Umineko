@@ -1,0 +1,1094 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Umineko: Martılar Ağladığında | Question &amp; Answer Arcs Türkçe Yama</title>
+    <meta
+      id="meta-description"
+      name="description"
+      content="Umineko When They Cry Question ve Answer Arcs (1-8. Bölümler) için 07th-Mod uyumlu Türkçe yama. PS3 seslendirme, 1080p grafik desteği ve tek tıkla kurulum aracı."
+    />
+    <meta name="theme-color" content="#0a0306" />
+    <link rel="canonical" href="https://remilya.dev/Umineko/" />
+    <link rel="alternate" hreflang="tr" href="https://remilya.dev/Umineko/" />
+    <link rel="alternate" hreflang="en" href="https://remilya.dev/Umineko/?lang=en" />
+    <link rel="alternate" hreflang="x-default" href="https://remilya.dev/Umineko/" />
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+
+    <meta property="og:site_name" content="Remilya · Umineko Türkçe Yama" />
+    <meta property="og:type" content="website" />
+    <meta id="og-locale" property="og:locale" content="tr_TR" />
+    <meta
+      id="og-title"
+      property="og:title"
+      content="Umineko: Martılar Ağladığında | Question &amp; Answer Arcs Türkçe Yama"
+    />
+    <meta
+      id="og-description"
+      property="og:description"
+      content="Umineko When They Cry Question ve Answer Arcs (1-8. Bölümler) için 07th-Mod uyumlu Türkçe yama. PS3 seslendirme, 1080p grafik desteği ve tek tıkla kurulum aracı."
+    />
+    <meta property="og:url" content="https://remilya.dev/Umineko/" />
+    <meta property="og:image" content="https://remilya.dev/Umineko/assets/umineko-social.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Umineko: Martılar Ağladığında · Question &amp; Answer Arcs Türkçe Yama (remilya.dev/Umineko)"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Remilya356" />
+    <meta
+      id="twitter-title"
+      name="twitter:title"
+      content="Umineko: Martılar Ağladığında | Question &amp; Answer Arcs Türkçe Yama"
+    />
+    <meta
+      id="twitter-description"
+      name="twitter:description"
+      content="Umineko When They Cry Question ve Answer Arcs (1-8. Bölümler) için 07th-Mod uyumlu Türkçe yama. PS3 seslendirme, 1080p grafik desteği ve tek tıkla kurulum aracı."
+    />
+    <meta name="twitter:image" content="https://remilya.dev/Umineko/assets/umineko-social.jpg" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Umineko When They Cry Türkçe Yama (Question & Answer Arcs)",
+        "operatingSystem": "Windows, Linux, SteamOS",
+        "applicationCategory": "GameApplication",
+        "softwareVersion": "1.0.0",
+        "inLanguage": ["tr", "en"],
+        "url": "https://remilya.dev/Umineko/",
+        "downloadUrl": "https://github.com/Remilya/Umineko/releases/latest/download/Umineko_TR_Kurulum.exe",
+        "image": "https://remilya.dev/Umineko/assets/umineko-social.jpg",
+        "author": {
+          "@type": "Person",
+          "name": "Remilya",
+          "url": "https://remilya.dev/"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "TRY"
+        }
+      }
+    </script>
+
+    <script>
+      (function () {
+        var root = document.documentElement;
+        root.classList.add("js");
+        try {
+          var q = new URLSearchParams(window.location.search).get("lang");
+          if (q === "tr" || q === "en") {
+            root.lang = q;
+            return;
+          }
+          var saved = window.localStorage.getItem("umineko-tr-locale");
+          if (saved === "tr" || saved === "en") {
+            root.lang = saved;
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="preload"
+      as="image"
+      href="assets/bea-hero.webp"
+      imagesrcset="assets/bea-hero-440.webp 440w, assets/bea-hero.webp 720w"
+      imagesizes="(max-width: 880px) 220px, 415px"
+      fetchpriority="high"
+    />
+    <link rel="modulepreload" href="main.js" />
+    <link rel="modulepreload" href="js/content.js" />
+    <link rel="modulepreload" href="js/deck.js" />
+    <link rel="modulepreload" href="js/slices.js" />
+    <link rel="modulepreload" href="js/showcase.js" />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600;1,700&amp;family=JetBrains+Mono:wght@600;700;800&amp;family=Plus+Jakarta+Sans:wght@500;700;800&amp;display=swap"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600;1,700&amp;family=JetBrains+Mono:wght@600;700;800&amp;family=Plus+Jakarta+Sans:wght@500;700;800&amp;display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600;1,700&amp;family=JetBrains+Mono:wght@600;700;800&amp;family=Plus+Jakarta+Sans:wght@500;700;800&amp;display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+  </head>
+  <body>
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true" focusable="false">
+      <symbol id="i-gh" viewBox="0 0 16 16">
+        <path
+          fill="currentColor"
+          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+        />
+      </symbol>
+      <symbol id="i-x-social" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+        />
+      </symbol>
+      <symbol id="i-arrow" viewBox="0 0 34 20">
+        <path
+          fill="none"
+          stroke="currentColor"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3 10h26M22 3.5l7 6.5-7 6.5"
+        />
+      </symbol>
+      <symbol id="i-left" viewBox="0 0 24 24">
+        <path
+          fill="none"
+          stroke="currentColor"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M19 12H5.5M11 5.5L4.5 12l6.5 6.5"
+        />
+      </symbol>
+      <symbol id="i-right" viewBox="0 0 24 24">
+        <path
+          fill="none"
+          stroke="currentColor"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M5 12h13.5M13 5.5l6.5 6.5-6.5 6.5"
+        />
+      </symbol>
+      <symbol id="i-download" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5" />
+          <path d="M4 18.5v1a1.5 1.5 0 0 0 1.5 1.5h13a1.5 1.5 0 0 0 1.5-1.5v-1" />
+        </g>
+      </symbol>
+      <symbol id="i-wedge" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19.5 4.5 9 15" />
+          <path d="M14.5 4.5h5v5" />
+          <path d="M5.5 12.5 11.5 18.5" />
+          <path d="M4 20l4.5-4.5" />
+        </g>
+      </symbol>
+      <symbol id="i-chess" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M8 20h8M6 20h12" />
+          <path d="M9 20v-4l-2-3 3-4-1-3 4-2 4 3-2 4 2 3-1 6" />
+        </g>
+      </symbol>
+      <symbol id="i-quill" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.2 3.8c-4.5 0-9.6 2.8-12.2 7.8L5 19l7.4-3c5-2.6 7.8-7.7 7.8-12.2Z" />
+          <path d="M14.5 9.5 3.5 20.5" />
+          <path d="M9.5 14.5h5" />
+        </g>
+      </symbol>
+      <symbol id="i-book" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H12v16.5H6.5A2.5 2.5 0 0 0 4 22V5.5Z" />
+          <path d="M20 5.5A2.5 2.5 0 0 0 17.5 3H12v16.5h5.5A2.5 2.5 0 0 1 20 22V5.5Z" />
+        </g>
+      </symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 3 4.5 6.2v5.4c0 5 3.3 8.4 7.5 9.9 4.2-1.5 7.5-4.9 7.5-9.9V6.2L12 3Z" />
+          <path d="m8.8 12.2 2.2 2.2 4.4-4.5" />
+        </g>
+      </symbol>
+      <symbol id="i-torii" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M2.5 5.2c4.5 1.5 14.5 1.5 19 0" />
+          <path d="M4.5 9.5h15" />
+          <path d="M7.2 6v15M16.8 6v15" />
+          <path d="M12 6v3.5" />
+        </g>
+      </symbol>
+      <symbol id="i-home" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3.5 10.5 12 3.5l8.5 7" />
+          <path d="M6 9.5V20h12V9.5" />
+        </g>
+      </symbol>
+    </svg>
+
+    <a class="skip" id="skip-link" href="#deck">Ana içeriğe geç</a>
+    <canvas id="cursorFx" aria-hidden="true"></canvas>
+
+    <header class="lnav">
+      <div class="lnav-in">
+        <a class="brand" id="brand-link" href="#top" aria-label="En üste dön">
+          <img src="assets/favicon.svg" alt="" width="34" height="34" fetchpriority="high" />
+          <span class="brand-name">UMINEKO <em>TR</em></span>
+          <small class="brand-sub" id="brand-subtitle">Question &amp; Answer Arcs · Türkçe Yama</small>
+        </a>
+
+        <nav id="primary-nav" aria-label="Ana gezinme">
+          <a id="nav-top" href="#top" aria-current="true">Giriş</a>
+          <a id="nav-hakikat" href="#hakikat">Özellikler</a>
+          <a id="nav-bolumler" href="#bolumler">Bölümler</a>
+          <a id="nav-kurulum" href="#kurulum">Kurulum</a>
+          <a id="nav-hakkinda" href="#hakkinda">Hakkında</a>
+        </nav>
+
+        <div class="acts">
+          <div class="lang-switch" id="locale-switcher" role="group" aria-label="Site dili">
+            <button type="button" class="locale-button is-active" data-locale="tr" aria-pressed="true">TR</button>
+            <button type="button" class="locale-button" data-locale="en" aria-pressed="false">EN</button>
+          </div>
+          <span id="locale-status" class="sr-only" aria-live="polite"></span>
+          <a class="ib" href="https://remilya.dev/" aria-label="remilya.dev Ana Sayfa" title="remilya.dev">
+            <svg aria-hidden="true"><use href="#i-home" /></svg>
+          </a>
+          <a
+            class="ib"
+            href="https://github.com/Remilya/Umineko/releases/latest"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub Releases"
+            title="GitHub"
+          >
+            <svg aria-hidden="true"><use href="#i-gh" /></svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <nav class="dots" id="dots" aria-label="Sayfa bölümleri"></nav>
+
+    <main class="deck" id="deck" tabindex="-1">
+      <!-- ============================ 1 · HERO ============================ -->
+      <section class="panel hero" id="top" data-label="Giriş" aria-labelledby="hero-title">
+        <div class="hero-backdrop" aria-hidden="true">
+          <span class="hero-slash hero-slash--1"></span>
+          <span class="hero-slash hero-slash--2"></span>
+        </div>
+        <div class="motes" data-motes="20" aria-hidden="true"></div>
+
+        <div class="wrap hero-wrap">
+          <div class="hero-copy">
+            <p class="kicker" id="hero-kicker">QUESTION &amp; ANSWER ARCS · 1-8. BÖLÜMLER</p>
+            <div class="hero-logo-row">
+              <img
+                class="hero-logo"
+                src="assets/logo-question-tr.webp"
+                alt="Umineko no Naku Koro ni · Cadı ve Muhakemenin Rondosu Türkçe Logo"
+                width="680"
+                height="239"
+              />
+            </div>
+            <h1 id="hero-title">
+              <span class="cap">U</span>mineko<span class="title-dot">:</span>
+              <span class="cap cap--crimson">M</span>artılar Ağladığında
+            </h1>
+            <p class="hero-lead" id="hero-lead">
+              Rokkenjima'daki sekiz oyun tahtasını PS3 seslendirmesi ve 1080p grafiklerle Türkçeye taşıyan yama.
+            </p>
+            <p class="hero-sub" id="hero-sub">
+              “Aşk olmadan gerçeği göremezsin.” Umineko'nun 1. ve 2. Bölüm mangalarıyla Higurashi serisini çeviren Remilya'dan, görsel romanın Question ve Answer Arcs bölümleri.
+            </p>
+
+            <div class="ctas">
+              <a
+                class="btn btn-crimson"
+                id="hero-cta-primary"
+                href="https://github.com/Remilya/Umineko/releases/latest/download/Umineko_TR_Kurulum.exe"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg aria-hidden="true"><use href="#i-download" /></svg>
+                <span id="hero-cta-primary-text">Kurulum Aracını İndir (v1.0.0)</span>
+              </a>
+              <a class="btn btn-paper" id="hero-cta-secondary" href="#kurulum">
+                <svg aria-hidden="true"><use href="#i-shield" /></svg>
+                <span id="hero-cta-secondary-text">Kurulum Rehberi</span>
+              </a>
+            </div>
+
+            <div class="hero-qlinks" id="hero-quicklinks">
+              <a class="hero-qlink" href="#manga-slice">
+                <span>Ep. 1 &amp; 2 Manga Çevirisi</span>
+                <svg aria-hidden="true"><use href="#i-arrow" /></svg>
+              </a>
+              <a class="hero-qlink" href="#kurulum">
+                <span>07th-Mod Ayar Tablosu</span>
+                <svg aria-hidden="true"><use href="#i-arrow" /></svg>
+              </a>
+              <a
+                class="hero-qlink"
+                href="https://www.virustotal.com/gui/file/5480e6ff78934950bd74738686204befe4aaaf61dda4ca94c09894726da73ca5/detection"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>VirusTotal Raporu</span>
+                <svg aria-hidden="true"><use href="#i-arrow" /></svg>
+              </a>
+            </div>
+
+            <p class="hero-hint" id="hero-scroll-hint">Aşağı kaydır veya ↓ tuşuna bas</p>
+          </div>
+
+          <div class="hero-art">
+            <div class="mascot-stage">
+              <div class="mascot-card">
+                <span class="mascot-ring" aria-hidden="true"></span>
+                <img
+                  class="mascot-img"
+                  src="assets/bea-hero.webp"
+                  srcset="assets/bea-hero-440.webp 440w, assets/bea-hero.webp 720w"
+                  sizes="(max-width: 880px) 220px, 415px"
+                  alt="Altın Cadı Beatrice"
+                  width="720"
+                  height="720"
+                  fetchpriority="high"
+                />
+              </div>
+              <div class="mascot-badges" id="hero-badges">
+                <div class="mascot-chip">
+                  <strong>EP. 1-8</strong>
+                  <span>SORU VE CEVAP</span>
+                </div>
+                <div class="mascot-chip">
+                  <strong>07TH-MOD</strong>
+                  <span>PS3 SES · 1080P</span>
+                </div>
+                <div class="mascot-chip">
+                  <strong>MANGA + VN</strong>
+                  <span>REMILYA ÇEVİRİSİ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================ 2 · ÖZELLİKLER (15° SLICES) ============================ -->
+      <section class="panel slices" id="hakikat" data-label="Özellikler" aria-labelledby="slices-sr-title">
+        <h2 class="sr-only" id="slices-sr-title">Yamanın Özellikleri</h2>
+
+        <div class="slices-stage" id="slicesStage" data-step="0">
+          <div class="comp-banner" id="slices-comp-banner" aria-hidden="true">
+            DÖRT BAŞLIK · BİRİNİ SEÇ
+          </div>
+
+          <div class="slices-area" id="slicesArea">
+            <!-- SLICE 1: COLORED TRUTHS + LIVE INTERACTIVE VN BOX (Crimson #7f1d1d) -->
+            <article class="sl sl-1" data-k="1" aria-labelledby="sl1-t">
+              <div class="body">
+                <p class="sl-kicker" id="sl1-eyebrow">I · MANTIK VE KAPALI ODA</p>
+                <h3 class="sl-t" id="sl1-t"><b class="cap">K</b>ırmızı, Mavi, Altın ve Mor Gerçekler</h3>
+                <p class="sl-s" id="sl1-desc">
+                  Umineko okuru doğrudan dedektif koltuğuna oturtan bir cinayet bilmecesi. Sekiz bölüm boyunca kurulan kilitli oda tanımlarını ve renkli gerçek düellolarını, tek bir ipucunu bile kaydırmadan Türkçeye aktardım.
+                </p>
+
+                <div class="vn-wrap" data-cursor="lock">
+                  <div class="vn-toolbar">
+                    <div class="vn-modes" role="group" aria-labelledby="truth-mode-label">
+                      <span class="sr-only" id="truth-mode-label">Hakikat Türü</span>
+                      <button type="button" data-truth-idx="0" aria-pressed="true">Kırmızı</button>
+                      <button type="button" data-truth-idx="1" aria-pressed="false">Mavi</button>
+                      <button type="button" data-truth-idx="2" aria-pressed="false">Altın</button>
+                      <button type="button" data-truth-idx="3" aria-pressed="false">Mor</button>
+                    </div>
+                    <div class="vn-langs" role="group" aria-labelledby="truth-lang-label">
+                      <span class="sr-only" id="truth-lang-label">Metin Dili</span>
+                      <button type="button" data-quote-lang="tr" aria-pressed="true">TR</button>
+                      <button type="button" data-quote-lang="en" aria-pressed="false">EN</button>
+                      <button type="button" data-quote-lang="ja" lang="ja" aria-pressed="false">日本語</button>
+                    </div>
+                  </div>
+
+                  <div class="vn-box" id="vn-box" data-tone="red">
+                    <div class="vn-bust-frame">
+                      <img
+                        id="vn-bust"
+                        src="assets/bust-bea.webp"
+                        alt="Beatrice"
+                        width="220"
+                        height="220"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div class="vn-content">
+                      <div class="vn-meta">
+                        <span class="vn-speaker" id="vn-speaker">BEATRICE · ALTIN CADI</span>
+                        <span class="vn-badge" id="vn-badge">KIRMIZI GERÇEK</span>
+                      </div>
+                      <p class="vn-line" id="vn-line">
+                        “Dinle ve hatırla! Kırmızıyla söylediğim her şey mutlak gerçektir! Kanıta ya da tartışmaya asla ihtiyaç duymaz!”
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="vn-foot">
+                    <a class="btn btn-ink btn-sm" id="sl1-primary" href="#bolumler">Bölümleri İncele ↓</a>
+                    <a class="sl-sublink" id="sl1-secondary" href="#kurulum">Kuruluma Geç ↓</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="lab" data-a="center">
+                <span class="lab-idx">I</span>
+                <svg class="lab-ico" aria-hidden="true"><use href="#i-wedge" /></svg>
+                <strong class="lab-title" id="sl1-lab-title">Renkli Gerçekler</strong>
+                <span class="lab-sub" id="sl1-lab-sub">Mantık ve Kapalı Oda</span>
+                <a class="lab-cta" id="sl1-lab-cta" href="#bolumler" aria-label="Aç: Renkli Gerçekler">İncele ↗</a>
+              </div>
+              <p class="sliv" id="sl1-sliv" aria-hidden="true">Renkli Gerçekler</p>
+            </article>
+
+            <!-- SLICE 2: QUESTION & ANSWER ARCS (Cerulean #0c4a6e) -->
+            <article class="sl sl-2" data-k="2" aria-labelledby="sl2-t">
+              <div class="body">
+                <p class="sl-kicker" id="sl2-eyebrow">II · QUESTION &amp; ANSWER ARCS</p>
+                <h3 class="sl-t" id="sl2-t"><b class="cap">Q</b>uestion ve Answer Arcs Bir Arada</h3>
+                <p class="sl-s" id="sl2-desc">
+                  Steam ve GOG'daki iki ana paketi kapsar. Soru Arkları (Ep. 1-4) ile Cevap Arkları / Chiru (Ep. 5-8) bölümlerini, Çay Partileri, gizli '????' sahneleri ve ipucu menüleriyle birlikte Türkçe oynayabilirsin.
+                </p>
+
+                <div class="sl-showcase">
+                  <a class="sl-frame" href="#bolumler" aria-label="Umineko Chiru Türkçe Bölüm Sonu Görseli">
+                    <img
+                      src="assets/shot-scroll-a-tr.webp"
+                      alt="Umineko no Naku Koro ni Chiru · Hakikat ve İllüzyonların Noktürnü Türkçe görseli"
+                      width="840"
+                      height="472"
+                      loading="lazy"
+                      decoding="async"
+                      fetchpriority="low"
+                    />
+                  </a>
+                  <div class="sl-side">
+                    <ul class="sl-pills" id="sl2-pills">
+                      <li class="sl-pill">Question Arcs (Ep. 1-4)</li>
+                      <li class="sl-pill">Answer Arcs / Chiru (Ep. 5-8)</li>
+                      <li class="sl-pill">Çay Partileri ve ????</li>
+                    </ul>
+                    <div class="sl-actions">
+                      <a class="btn btn-ink btn-sm" id="sl2-primary" href="#bolumler">8 Bölümü Gör ↓</a>
+                      <a class="sl-sublink" id="sl2-secondary" href="#kurulum">Kurulum Rehberi ↓</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="lab" data-a="center">
+                <span class="lab-idx">II</span>
+                <svg class="lab-ico" aria-hidden="true"><use href="#i-chess" /></svg>
+                <strong class="lab-title" id="sl2-lab-title">Question &amp; Answer</strong>
+                <span class="lab-sub" id="sl2-lab-sub">1-8. Bölümler</span>
+                <a class="lab-cta" id="sl2-lab-cta" href="#bolumler" aria-label="Aç: Question &amp; Answer">İncele ↗</a>
+              </div>
+              <p class="sliv" id="sl2-sliv" lang="en" aria-hidden="true">Question &amp; Answer</p>
+            </article>
+
+            <!-- SLICE 3: IN-GAME GRAPHICS, RIDDLES & KANJI SUPPORT (Burnished Gold #6b3410) -->
+            <article class="sl sl-3" data-k="3" aria-labelledby="sl3-t">
+              <div class="body">
+                <p class="sl-kicker" id="sl3-eyebrow">III · GÖRSEL UYARLAMA VE TİPOGRAFİ</p>
+                <h3 class="sl-t" id="sl3-t"><b class="cap">O</b>yun İçi Görseller ve Kanji Uyumu</h3>
+                <p class="sl-s" id="sl3-desc">
+                  Ana menüleri, bölüm logolarını, 8. Bölüm Cadılar Bayramı bilmecelerini ve kapanış parşömenlerini Türkçeleştirdim. İsim açıklamalarındaki Japonca Kanji karakterleri de satır içinde bozulmadan görünüyor.
+                </p>
+
+                <div class="sl-showcase" data-cursor="lock">
+                  <button type="button" class="sl-frame" id="gal-trigger" aria-label="Oyun içi ekran görüntüsünü büyüt">
+                    <img
+                      id="gal-img"
+                      src="assets/shot-kanji-tr.webp"
+                      alt="1. Bölüm · Türkçe diyalog satırı içinde Japonca Kanji uyumu"
+                      width="840"
+                      height="472"
+                      loading="lazy"
+                      decoding="async"
+                      fetchpriority="low"
+                    />
+                  </button>
+                  <div class="sl-side">
+                    <div class="gal-tabs" role="group" aria-label="Görsel örnekleri">
+                      <button type="button" class="gal-tab" data-gal-idx="0" aria-pressed="true">Kanji Uyumu</button>
+                      <button type="button" class="gal-tab" data-gal-idx="1" aria-pressed="false">Kırmızı Gerçek</button>
+                      <button type="button" class="gal-tab" data-gal-idx="2" aria-pressed="false">8. Bölüm Bilmece</button>
+                      <button type="button" class="gal-tab" data-gal-idx="3" aria-pressed="false">Kapanış Ekranı</button>
+                    </div>
+                    <p class="gal-caption" id="gal-caption">
+                      1. Bölüm · İsim açıklamaları ve kelime oyunlarındaki Japonca Kanji karakterleri (右代宮 戦人) Türkçe satır içinde bozulmadan görünür.
+                    </p>
+                    <span class="gal-hint" id="gal-zoom-hint">Tam ekran görmek için görsele tıkla</span>
+                    <div class="sl-actions">
+                      <a class="btn btn-gold btn-sm" id="sl3-primary" href="#zoom">Görseli Büyüt</a>
+                      <a class="sl-sublink" id="sl3-secondary" href="#kurulum">İndirme Merkezi ↓</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="lab" data-a="center">
+                <span class="lab-idx">III</span>
+                <svg class="lab-ico" aria-hidden="true"><use href="#i-quill" /></svg>
+                <strong class="lab-title" id="sl3-lab-title">Görsel ve Arayüz</strong>
+                <span class="lab-sub" id="sl3-lab-sub">Menüler ve Bilmeceler</span>
+                <a class="lab-cta" id="sl3-lab-cta" href="#kurulum" aria-label="Aç: Görsel ve Arayüz">İncele ↗</a>
+              </div>
+              <p class="sliv" id="sl3-sliv" aria-hidden="true">Görsel ve Arayüz</p>
+            </article>
+
+            <!-- SLICE 4: EP. 1 & EP. 2 TURKISH MANGA HERITAGE (Bernkastel Violet #4c1d95) -->
+            <article class="sl sl-4" data-k="4" aria-labelledby="sl4-t">
+              <div class="body">
+                <p class="sl-kicker" id="sl4-eyebrow">IV · MANGA UYARLAMALARI</p>
+                <h3 class="sl-t" id="sl4-t"><b class="cap">E</b>p. 1 ve Ep. 2 Mangalarının Çevirmeninden</h3>
+
+                <div class="sl-showcase" data-cursor="lock">
+                  <div class="sl-manga-pair">
+                    <a
+                      class="sl-manga-vol sl-manga-vol--1"
+                      id="sl4-manga-1"
+                      href="https://manga-tr.com/manga-umineko-no-naku-koro-ni-episode-1-legend-of-the-golden-witch.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Umineko Episode 1 Türkçe Manga Oku"
+                    >
+                      <img
+                        src="assets/manga-ep1-cover.webp"
+                        alt="Umineko Episode 1: Legend of the Golden Witch Türkçe Manga"
+                        width="300"
+                        height="465"
+                        loading="lazy"
+                        decoding="async"
+                        fetchpriority="low"
+                      />
+                      <span class="sl-manga-tag">EP 01 · MANGA</span>
+                    </a>
+                    <a
+                      class="sl-manga-vol sl-manga-vol--2"
+                      id="sl4-manga-2"
+                      href="https://manga-tr.com/manga-umineko-no-naku-koro-ni-episode-2-turn-of-the-golden-witch.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Umineko Episode 2 Türkçe Manga Oku"
+                    >
+                      <img
+                        src="assets/manga-ep2-cover.webp"
+                        alt="Umineko Episode 2: Turn of the Golden Witch Türkçe Manga"
+                        width="300"
+                        height="426"
+                        loading="lazy"
+                        decoding="async"
+                        fetchpriority="low"
+                      />
+                      <span class="sl-manga-tag">EP 02 · MANGA</span>
+                    </a>
+                  </div>
+
+                  <div class="sl-side">
+                    <span class="flow-chip" id="sl4-badge">Türkçe Çeviri ve Balon Dizgisi: Remilya</span>
+                    <p class="sl-s sl-s--left" id="sl4-desc">
+                      Görsel romandan önce serinin 1. ve 2. Bölüm mangalarının Türkçe çevirisini ve balon dizgisini hazırladım. Rokkenjima'nın diline ve karakterlerin konuşma tarzına mangalardan aşina olduğum için oyun metninde de aynı terminolojiyi korudum.
+                    </p>
+                    <div class="sl-actions">
+                      <a
+                        class="btn btn-gold btn-sm"
+                        id="sl4-primary"
+                        href="https://manga-tr.com/manga-umineko-no-naku-koro-ni-episode-1-legend-of-the-golden-witch.html"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Ep. 1 Mangayı Oku ↗
+                      </a>
+                      <a
+                        class="sl-sublink"
+                        id="sl4-secondary"
+                        href="https://manga-tr.com/manga-umineko-no-naku-koro-ni-episode-2-turn-of-the-golden-witch.html"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Ep. 2 Mangayı Oku ↗
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="lab" data-a="center">
+                <span class="lab-idx">IV</span>
+                <svg class="lab-ico" aria-hidden="true"><use href="#i-book" /></svg>
+                <strong class="lab-title" id="sl4-lab-title">Manga Çevirisi</strong>
+                <span class="lab-sub" id="sl4-lab-sub">Ep. 1 ve Ep. 2 Türkçe Manga</span>
+                <a
+                  class="lab-cta"
+                  id="sl4-lab-cta"
+                  href="https://manga-tr.com/manga-umineko-no-naku-koro-ni-episode-1-legend-of-the-golden-witch.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Aç: Manga Çevirisi"
+                >
+                  İncele ↗
+                </a>
+              </div>
+              <p class="sliv" id="sl4-sliv" aria-hidden="true">Manga Çevirisi</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="slice-snap" style="--k: 1" aria-hidden="true"></div>
+        <div class="slice-snap" style="--k: 2" aria-hidden="true"></div>
+        <div class="slice-snap" style="--k: 3" aria-hidden="true"></div>
+        <div class="slice-snap" style="--k: 4" aria-hidden="true"></div>
+      </section>
+
+      <!-- ============================ 3 · 8-EPISODE GUIDE ============================ -->
+      <section
+        class="panel grimoire-panel"
+        id="bolumler"
+        data-label="Bölümler"
+        aria-labelledby="ep-section-title"
+      >
+        <div class="wrap">
+          <div class="sec-head">
+            <p class="kicker" id="ep-eyebrow">ROKKENJIMA · 4 EKİM 1986</p>
+            <h2 class="h2" id="ep-section-title">
+              <span class="cap cap--crimson">B</span>ölüm Rehberi (Ep. 1-8)
+            </h2>
+            <p class="sec-copy" id="ep-section-copy">
+              4 Ekim 1986'da fırtınayla dış dünyadan kopan Rokkenjima Adası'ndaki sekiz oyun tahtası. Kartlara tıklayarak veya kaydırarak bölümler arasında gezinebilirsin.
+            </p>
+          </div>
+
+          <div class="ep-showcase">
+            <div class="ep-fan-wrap">
+              <div class="ep-stage" id="ep-stage">
+                <article class="ep-card is-center" data-pos="center">
+                  <button type="button" class="ep-card__btn" aria-pressed="true" aria-label="1. Bölüm: Altın Cadı Efsanesi">
+                    <img src="assets/ep1-card.webp" alt="1. Bölüm · Altın Cadı Efsanesi" width="360" height="516" loading="lazy" decoding="async" />
+                    <span class="ep-card__tag">EP 01</span>
+                    <span class="ep-card__arc">QUESTION</span>
+                  </button>
+                </article>
+                <article class="ep-card" data-pos="right">
+                  <button type="button" class="ep-card__btn" aria-pressed="false" aria-label="2. Bölüm: Altın Cadının Sırası">
+                    <img src="assets/ep2-card.webp" alt="2. Bölüm · Altın Cadının Sırası" width="360" height="516" loading="lazy" decoding="async" />
+                    <span class="ep-card__tag">EP 02</span>
+                    <span class="ep-card__arc">QUESTION</span>
+                  </button>
+                </article>
+                <article class="ep-card" data-pos="far-right">
+                  <button type="button" class="ep-card__btn" aria-pressed="false" aria-label="3. Bölüm: Altın Cadının Şöleni">
+                    <img src="assets/ep3-card.webp" alt="3. Bölüm · Altın Cadının Şöleni" width="360" height="516" loading="lazy" decoding="async" />
+                    <span class="ep-card__tag">EP 03</span>
+                    <span class="ep-card__arc">QUESTION</span>
+                  </button>
+                </article>
+                <article class="ep-card" data-pos="hidden">
+                  <button type="button" class="ep-card__btn" aria-pressed="false" aria-label="4. Bölüm: Altın Cadının İttifakı">
+                    <img src="assets/ep4-card.webp" alt="4. Bölüm · Altın Cadının İttifakı" width="360" height="516" loading="lazy" decoding="async" />
+                    <span class="ep-card__tag">EP 04</span>
+                    <span class="ep-card__arc">QUESTION</span>
+                  </button>
+                </article>
+                <article class="ep-card ep-card--chiru" data-pos="hidden">
+                  <button type="button" class="ep-card__btn" aria-pressed="false" aria-label="5. Bölüm: Altın Cadının Sonu">
+                    <img src="assets/ep5-card.webp" alt="5. Bölüm · Altın Cadının Sonu" width="360" height="516" loading="lazy" decoding="async" />
+                    <span class="ep-card__tag">EP 05</span>
+                    <span class="ep-card__arc">CHIRU</span>
+                  </button>
+                </article>
+                <article class="ep-card ep-card--chiru" data-pos="hidden">
+                  <button type="button" class="ep-card__btn" aria-pressed="false" aria-label="6. Bölüm: Altın Cadının Şafağı">
+                    <img src="assets/ep6-card.webp" alt="6. Bölüm · Altın Cadının Şafağı" width="360" height="516" loading="lazy" decoding="async" />
+                    <span class="ep-card__tag">EP 06</span>
+                    <span class="ep-card__arc">CHIRU</span>
+                  </button>
+                </article>
+                <article class="ep-card ep-card--chiru" data-pos="far-left">
+                  <button type="button" class="ep-card__btn" aria-pressed="false" aria-label="7. Bölüm: Altın Cadının Ağıtı">
+                    <img src="assets/ep7-card.webp" alt="7. Bölüm · Altın Cadının Ağıtı" width="360" height="516" loading="lazy" decoding="async" />
+                    <span class="ep-card__tag">EP 07</span>
+                    <span class="ep-card__arc">CHIRU</span>
+                  </button>
+                </article>
+                <article class="ep-card ep-card--chiru" data-pos="left">
+                  <button type="button" class="ep-card__btn" aria-pressed="false" aria-label="8. Bölüm: Altın Cadının Alacakaranlığı">
+                    <img src="assets/ep8-card.webp" alt="8. Bölüm · Altın Cadının Alacakaranlığı" width="360" height="516" loading="lazy" decoding="async" />
+                    <span class="ep-card__tag">EP 08</span>
+                    <span class="ep-card__arc">CHIRU</span>
+                  </button>
+                </article>
+              </div>
+
+              <div class="ep-controls">
+                <button type="button" class="car-nav" id="ep-prev" aria-label="Önceki bölüm">
+                  <svg aria-hidden="true"><use href="#i-left" /></svg>
+                </button>
+                <span class="ep-count" id="ep-count">01 / 08</span>
+                <button type="button" class="car-nav" id="ep-next" aria-label="Sonraki bölüm">
+                  <svg aria-hidden="true"><use href="#i-right" /></svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="ep-dossier">
+              <div class="ep-tabs" role="group" aria-label="Bölüm seçimi">
+                <button type="button" class="ep-tab" data-ep-tab="0" aria-pressed="true">Ep.1</button>
+                <button type="button" class="ep-tab" data-ep-tab="1" aria-pressed="false">Ep.2</button>
+                <button type="button" class="ep-tab" data-ep-tab="2" aria-pressed="false">Ep.3</button>
+                <button type="button" class="ep-tab" data-ep-tab="3" aria-pressed="false">Ep.4</button>
+                <button type="button" class="ep-tab" data-ep-tab="4" aria-pressed="false">Ep.5</button>
+                <button type="button" class="ep-tab" data-ep-tab="5" aria-pressed="false">Ep.6</button>
+                <button type="button" class="ep-tab" data-ep-tab="6" aria-pressed="false">Ep.7</button>
+                <button type="button" class="ep-tab" data-ep-tab="7" aria-pressed="false">Ep.8</button>
+              </div>
+
+              <div class="ep-dossier__body">
+                <div class="ep-dossier__meta">
+                  <span class="ep-badge" id="ep-active-badge">1. Bölüm · QUESTION ARCS</span>
+                  <span class="ep-stats" id="ep-active-stats">4 Ekim 1986 · Açılış Tahtası</span>
+                </div>
+                <h3 class="ep-title" id="ep-active-title">Altın Cadı Efsanesi</h3>
+                <p class="ep-sub" id="ep-active-sub">Legend of the Golden Witch · 黄金の魔女の伝説</p>
+                <p class="ep-note" id="ep-active-note">
+                  Ushiromiya ailesi yıllık konferans için Rokkenjima'da toplanır. Tayfun adayı dış dünyadan koparınca Altın Cadı Beatrice'in mektubu okunur ve ilk kapalı oda cinayetleri işlenir.
+                </p>
+                <div class="ep-chips" id="ep-active-truths">
+                  <span class="ep-chip">Kitabe Bilmecesi</span>
+                  <span class="ep-chip">Kapalı Oda</span>
+                  <span class="ep-chip">TR Manga Çevirisi</span>
+                </div>
+                <div class="ep-dossier__foot">
+                  <span class="ep-status" id="ep-active-status">Question &amp; Answer Arcs · Çay Partisi ve ???? Dahil</span>
+                  <a class="btn btn-crimson btn-sm" id="ep-active-cta" href="#kurulum">Yamayı İndir ↓</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================ 4 · DOWNLOAD & 07TH-MOD MATRIX ============================ -->
+      <section
+        class="panel install-panel"
+        id="kurulum"
+        data-label="Kurulum"
+        aria-labelledby="inst-title"
+      >
+        <div class="wrap">
+          <div class="sec-head">
+            <p class="kicker" id="inst-eyebrow">SÜRÜM v1.0.0 · 07TH-MOD UYUMLU</p>
+            <h2 class="h2" id="inst-title"><span class="cap">Ü</span>ç Adımda Kurulum</h2>
+            <p class="sec-copy" id="inst-copy">
+              Yamayı kurmadan önce Steam veya GOG sürümünün üzerine 07th-Mod (PS3 seslendirme ve 1080p grafik paketi) kurulu olmalı.
+            </p>
+          </div>
+
+          <div class="install-grid">
+            <!-- Left: Standalone Installer & Manual Archives -->
+            <div class="inst-card">
+              <div class="inst-card__head">
+                <h3 class="inst-card__title" id="inst-dl-title">1 · Kurulum Aracı ve Paketler</h3>
+                <a
+                  class="vt-pill"
+                  id="inst-vt-badge"
+                  href="https://www.virustotal.com/gui/file/5480e6ff78934950bd74738686204befe4aaaf61dda4ca94c09894726da73ca5/detection"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  VirusTotal Temiz ↗
+                </a>
+              </div>
+
+              <div class="exe-box">
+                <button
+                  type="button"
+                  class="exe-thumb"
+                  id="installer-zoom"
+                  aria-label="Kurulum aracı arayüzünü büyüt"
+                >
+                  <img
+                    src="assets/installer-preview.webp"
+                    alt="Umineko_TR_Kurulum.exe önizleme"
+                    width="880"
+                    height="771"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </button>
+                <div class="exe-info">
+                  <h4 id="inst-exe-title">Umineko_TR_Kurulum.exe</h4>
+                  <p class="exe-meta" id="inst-exe-meta">Önerilen · Windows (64-bit) · Otomatik Yedekli</p>
+                  <p class="exe-desc" id="inst-exe-desc">
+                    Steam ve GOG klasörlerini otomatik bulur, 07th-Mod kurulumunu doğrular ve dosyaları yedekleyerek yamayı kurar.
+                  </p>
+                </div>
+              </div>
+
+              <div class="exe-actions">
+                <a
+                  class="btn btn-crimson btn-sm"
+                  href="https://github.com/Remilya/Umineko/releases/latest/download/Umineko_TR_Kurulum.exe"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg aria-hidden="true"><use href="#i-download" /></svg>
+                  <span id="inst-exe-btn-text">Kurulum Aracını İndir</span>
+                </a>
+                <button
+                  type="button"
+                  class="hash-btn"
+                  data-copy-hash="5480e6ff78934950bd74738686204befe4aaaf61dda4ca94c09894726da73ca5"
+                  data-hash-target="installer"
+                >
+                  <span data-copy-label>SHA-256 Kopyala</span>
+                </button>
+              </div>
+
+              <div class="manual-box">
+                <p class="manual-title" id="inst-manual-title">
+                  Manuel ZIP Paketleri (İsteğe Bağlı · LINUX &amp; STEAM DECK)
+                </p>
+                <div class="zip-list">
+                  <div class="zip-row">
+                    <a
+                      class="zip-link"
+                      id="inst-qzip-label"
+                      href="https://github.com/Remilya/Umineko/releases/latest/download/Umineko_Question_TR.zip"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Question Arcs (Ep. 1-4) Manuel Kurulum ZIP
+                    </a>
+                    <button
+                      type="button"
+                      class="zip-hash"
+                      data-copy-hash="d570db894500e027ef6e2b7446911bcaa1710eb6f68c56f592d665539f3dd990"
+                      data-hash-target="question"
+                    >
+                      <span data-copy-label>SHA-256 Kopyala</span>
+                    </button>
+                  </div>
+                  <div class="zip-row">
+                    <a
+                      class="zip-link"
+                      id="inst-azip-label"
+                      href="https://github.com/Remilya/Umineko/releases/latest/download/Umineko_Answer_TR.zip"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Answer Arcs / Chiru (Ep. 5-8) Manuel Kurulum ZIP
+                    </a>
+                    <button
+                      type="button"
+                      class="zip-hash"
+                      data-copy-hash="63607af7f0efcf5089eb22c2c836ff3852476f0cfd169749942e2deb1004e5f5"
+                      data-hash-target="answer"
+                    >
+                      <span data-copy-label>SHA-256 Kopyala</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Required 07th-Mod Settings Matrix -->
+            <div class="inst-card inst-card--matrix">
+              <div class="inst-card__head">
+                <h3 class="inst-card__title" id="inst-matrix-title">2 · Gerekli 07th-Mod Ayarları</h3>
+                <a
+                  class="mod-link"
+                  id="inst-mod-btn"
+                  href="https://wiki.07th-mod.com/Umineko/Umineko-Part-3a-Cross-Platform-Installer/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  07th-Mod İndir ↗
+                </a>
+              </div>
+
+              <p class="matrix-note" id="inst-matrix-note">
+                07th-Mod Kurulum Aracında şu seçenekleri işaretle:
+              </p>
+
+              <table class="matrix-table">
+                <thead>
+                  <tr>
+                    <th scope="col" id="inst-col-setting">AYAR</th>
+                    <th scope="col" id="inst-col-q">QUESTION (1-4)</th>
+                    <th scope="col" id="inst-col-a">CHIRU (5-8)</th>
+                  </tr>
+                </thead>
+                <tbody id="inst-matrix-body">
+                  <tr>
+                    <th scope="row">Choose Patch</th>
+                    <td><span class="matrix-val">full Patch</span></td>
+                    <td><span class="matrix-val matrix-val--alert">adv-mode (Zorunlu!)</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Translations</th>
+                    <td><span class="matrix-val">English / Japanese</span></td>
+                    <td><span class="matrix-val">English / Japanese</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Experimental Script</th>
+                    <td><span class="matrix-val">No Change</span></td>
+                    <td><span class="matrix-val">No Change</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Sprites / BGM</th>
+                    <td><span class="matrix-val">PS3 Sprites (Önerilir)</span></td>
+                    <td><span class="matrix-val">PS3 Sprites (Önerilir)</span></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <p class="step3-note" id="inst-step3">
+                3 · Umineko_TR_Kurulum.exe aracını açıp 'Yamayı Kur' düğmesine bas. İstediğin zaman 'Yedeğe Dön' ile İngilizce 07th-Mod dosyalarına geri dönebilirsin.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================ 5 · CREDITS & REMILYA.DEV ============================ -->
+      <section
+        class="panel contact-panel"
+        id="hakkinda"
+        data-label="Hakkında"
+        aria-labelledby="about-title"
+      >
+        <div class="motes" data-motes="14" aria-hidden="true"></div>
+        <div class="wrap contact-wrap">
+          <div class="sec-head">
+            <p class="kicker" id="about-eyebrow">REMILYA.DEV · BAĞIMSIZ ÇEVİRİ</p>
+            <h2 class="h2" id="about-title"><span class="cap">H</span>akkında ve Diğer Çeviriler</h2>
+            <p class="sec-copy" id="about-copy">
+              Bu yama kâr amacı gütmeyen bir hayran çevirisi. Orijinal oyun dosyalarını içermez, çalışması için Steam veya GOG sürümü gerekir.
+            </p>
+          </div>
+
+          <div class="credits-bar">
+            <p class="credits-bar__title" id="credits-title">EMEK VE TEŞEKKÜR</p>
+            <p class="credits-bar__text" id="credits-text">
+              Orijinal Eser: 07th Expansion / Ryukishi07 · PS3 Uyarlaması: Alchemist · Motor ve Grafik Altyapısı: 07th-Mod Topluluğu · Türkçe Çeviri, Görsel Uyarlama ve Kurulum Aracı: Remilya.
+            </p>
+          </div>
+
+          <div class="social-grid" id="about-cards">
+            <a
+              class="social-card"
+              href="https://remilya.dev/#translations"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="social-card__ico"><svg aria-hidden="true"><use href="#i-book" /></svg></span>
+              <span class="social-card__body">
+                <strong>Umineko Ep. 1 &amp; Ep. 2 Türkçe Manga</strong>
+                <span class="social-card__handle">remilya.dev/#translations</span>
+                <span class="social-card__desc">Görsel romandan önce çevirisini ve balon dizgisini yaptığım mangalar</span>
+              </span>
+              <svg class="social-card__arr" aria-hidden="true"><use href="#i-arrow" /></svg>
+            </a>
+
+            <a
+              class="social-card"
+              href="https://remilya.dev/Higurashi/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="social-card__ico"><svg aria-hidden="true"><use href="#i-quill" /></svg></span>
+              <span class="social-card__body">
+                <strong>Higurashi When They Cry TR</strong>
+                <span class="social-card__handle">remilya.dev/Higurashi</span>
+                <span class="social-card__desc">Serinin ilk halkası için hazırladığım ana ve ek bölümler Türkçe yaması</span>
+              </span>
+              <svg class="social-card__arr" aria-hidden="true"><use href="#i-arrow" /></svg>
+            </a>
+
+            <a
+              class="social-card"
+              href="https://github.com/Remilya/Umineko"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="social-card__ico"><svg aria-hidden="true"><use href="#i-gh" /></svg></span>
+              <span class="social-card__body">
+                <strong>GitHub Deposu ve Sürümler</strong>
+                <span class="social-card__handle">Remilya/Umineko</span>
+                <span class="social-card__desc">Kurulum aracı kaynak kodu, sürüm paketleri ve hata bildirimi</span>
+              </span>
+              <svg class="social-card__arr" aria-hidden="true"><use href="#i-arrow" /></svg>
+            </a>
+
+            <a
+              class="social-card"
+              href="https://remilya.dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="social-card__ico"><svg aria-hidden="true"><use href="#i-torii" /></svg></span>
+              <span class="social-card__body">
+                <strong>Remilya Ana Sayfa</strong>
+                <span class="social-card__handle">remilya.dev</span>
+                <span class="social-card__desc">RAIDOU TR, Gensokyo 3D Atlas, diğer çeviriler ve açık kaynak araçlar</span>
+              </span>
+              <svg class="social-card__arr" aria-hidden="true"><use href="#i-arrow" /></svg>
+            </a>
+          </div>
+
+          <div class="routes-box">
+            <p class="routes-box__title" id="routes-title">REMILYA.DEV KISA BAĞLANTILAR</p>
+            <div class="routes-list" id="short-routes">
+              <a class="route-pill" href="https://remilya.dev/">remilya.dev</a>
+              <a class="route-pill" href="https://remilya.dev/Higurashi/">/Higurashi</a>
+              <a class="route-pill" href="https://remilya.dev/Gensokyo/">/Gensokyo</a>
+              <a class="route-pill" href="https://remilya.dev/Raidou/">/Raidou</a>
+              <a class="route-pill" href="https://remilya.dev/ScarletSavior/">/ScarletSavior</a>
+              <a class="route-pill" href="https://remilya.dev/Voicevox/">/Voicevox</a>
+            </div>
+          </div>
+        </div>
+
+        <footer class="foot">
+          <div class="foot-in">
+            <p class="foot-sig" id="footer-note">UMINEKO QUESTION &amp; ANSWER ARCS TÜRKÇE YAMA · REMILYA.DEV/UMINEKO</p>
+            <a class="foot-top" id="footer-top-link" href="#top">Başa Dön ↑</a>
+          </div>
+        </footer>
+      </section>
+    </main>
+
+    <!-- Fullscreen Lightbox Modal -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-caption" hidden>
+      <div class="lightbox__inner">
+        <img class="lightbox__img" id="lightbox-img" src="assets/shot-kanji-tr-hd.webp" alt="" />
+        <div class="lightbox__bar">
+          <p class="lightbox__cap" id="lightbox-caption"></p>
+          <button type="button" class="lightbox__close" id="lightbox-close" aria-label="Görseli kapat">
+            ESC · ×
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

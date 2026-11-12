@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://remilya.dev/Umineko/sitemap.xml
