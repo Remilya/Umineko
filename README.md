@@ -8,6 +8,23 @@ Yama `07th-Mod` (PS3 seslendirme ve 1080p grafik paketi) altyapısı üzerinde �
 
 > **Bilgilendirme:** Bu yamanın çevirisinde LLM (**Argon 4**, **Carbon 4** ve **Gemini**) kullanılmıştır. Bununla ilgili bir probleminiz varsa lütfen yamayı kullanmayınız.
 
+## Tanıtım Fragmanı (Özel Çay Partisi)
+
+Beatrice ve Battler'ın yama kapsamını, renkli gerçekleri ve görsel uyarlamaları spoiler vermeden anlattığı Özel Çay Partisi tanıtım videosunu izleyebilirsiniz:
+
+<div align="center">
+  <a href="https://remilya.dev/Umineko/assets/umineko-tr-fragman.mp4">
+    <img src="docs/trailer/umineko-fragman-kapak.webp" alt="Umineko Türkçe Yama Özel Çay Partisi Fragmanı (1080p60)" width="840" />
+  </a>
+  <p>
+    <a href="https://remilya.dev/Umineko/assets/umineko-tr-fragman.mp4"><strong>▶ Fragmanı Tam Kalite İzle (1080p60 Master)</strong></a>
+    &nbsp;·&nbsp;
+    <a href="https://remilya.dev/Umineko/"><strong>Web Sitesi ve Kurulum Rehberi (remilya.dev/Umineko)</strong></a>
+    &nbsp;·&nbsp;
+    <a href="https://drive.google.com/file/d/1SBi3Izux33Hkb7v79mEVL55Pib-TxllD/view?usp=sharing"><strong>Alternatif (Google Drive)</strong></a>
+  </p>
+</div>
+
 ## Kurulum
 
 Türkçe yama düz Steam veya GOG sürümüne doğrudan kurulmaz; önce oyunların üzerine PS3 çizimlerini, seslendirmeyi ve güncellenmiş oyun motorunu ekleyen resmi [07th-Mod Kurulum Aracı](https://wiki.07th-mod.com/Umineko/Umineko-Part-3a-Cross-Platform-Installer/) kurulmalıdır.
