@@ -92,6 +92,25 @@ function renderHero(dict) {
   setText("#hero-sub", dict.hero.sub);
   setText("#hero-cta-primary-text", dict.hero.ctaPrimary);
   setText("#hero-cta-secondary-text", dict.hero.ctaSecondary);
+  setText("#hero-video-pill", dict.hero.videoPill);
+  setText("#trailer-modal-title", dict.hero.trailerModalTitle);
+  const heroPlayEl = $("#hero-video-play");
+  if (heroPlayEl && dict.aria.playHeroTrailer) {
+    heroPlayEl.setAttribute("aria-label", dict.aria.playHeroTrailer);
+  }
+  const heroExpandEl = $("#hero-video-expand");
+  if (heroExpandEl) {
+    if (dict.aria.expandHeroTrailer) {
+      heroExpandEl.setAttribute("aria-label", dict.aria.expandHeroTrailer);
+    }
+    if (dict.hero.expandTitle) {
+      heroExpandEl.setAttribute("title", dict.hero.expandTitle);
+    }
+  }
+  const trailerCloseEl = $("#trailer-modal-close");
+  if (trailerCloseEl && dict.aria.closeTrailerModal) {
+    trailerCloseEl.setAttribute("aria-label", dict.aria.closeTrailerModal);
+  }
   setText("#hero-scroll-hint", dict.hero.scrollHint);
 
   const quickEl = $("#hero-quicklinks");
@@ -356,6 +375,7 @@ function bootstrap() {
   episodesApi = initEpisodeGrimoire(currentLocale);
   initRemiliaCursor();
   initAtmosphere();
+  initTrailerModal();
 
   document.querySelectorAll(".locale-button").forEach((btn) => {
     btn.addEventListener("click", () => {
@@ -364,6 +384,142 @@ function bootstrap() {
         applyLocale(targetLocale, { announce: true, syncQuoteLang: true });
       }
     });
+  });
+}
+
+function initTrailerModal() {
+  const heroCard = $("#hero-video-card");
+  const heroVideo = $("#hero-trailer-video");
+  const heroPlayBtn = $("#hero-video-play");
+  const expandBtn = $("#hero-video-expand");
+  const modal = $("#trailer-modal");
+  const closeBtn = $("#trailer-modal-close");
+  const modalVideo = $("#trailer-video");
+
+  if (heroCard && heroVideo && heroPlayBtn) {
+    const startInlinePlayback = () => {
+      heroCard.classList.add("has-started", "is-playing");
+      heroVideo.controls = true;
+      const p = heroVideo.play();
+      if (p && typeof p.catch === "function") {
+        p.catch(() => {});
+      }
+      heroVideo.focus({ preventScroll: true });
+    };
+
+    heroPlayBtn.addEventListener("click", startInlinePlayback);
+
+    heroVideo.addEventListener("play", () => {
+      heroCard.classList.add("has-started", "is-playing");
+      heroVideo.controls = true;
+    });
+
+    heroVideo.addEventListener("pause", () => {
+      heroCard.classList.remove("is-playing");
+    });
+
+    heroVideo.addEventListener("ended", () => {
+      heroCard.classList.remove("is-playing", "has-started");
+      heroVideo.controls = false;
+      try {
+        heroVideo.currentTime = 0;
+        heroVideo.load();
+      } catch {
+        /* ignore reset errors */
+      }
+    });
+  }
+
+  if (!expandBtn || !modal || !closeBtn || !modalVideo) return;
+
+  let lastFocus = null;
+
+  const openModal = () => {
+    lastFocus = document.activeElement;
+    const resumeTime = heroVideo ? heroVideo.currentTime || 0 : 0;
+    if (heroVideo && !heroVideo.paused) {
+      heroVideo.pause();
+    }
+    modal.hidden = false;
+    document.body.style.overflow = "hidden";
+    modalVideo.focus({ preventScroll: true });
+
+    const playModalFrom = () => {
+      if (resumeTime > 0) {
+        try {
+          modalVideo.currentTime = resumeTime;
+        } catch {
+          /* ignore seek before metadata */
+        }
+      }
+      const p = modalVideo.play();
+      if (p && typeof p.catch === "function") {
+        p.catch(() => {});
+      }
+    };
+
+    if (modalVideo.readyState >= 1) {
+      playModalFrom();
+    } else {
+      modalVideo.addEventListener("loadedmetadata", playModalFrom, { once: true });
+      modalVideo.load();
+    }
+  };
+
+  const closeModal = () => {
+    if (modal.hidden) return;
+    const modalTime = modalVideo.currentTime || 0;
+    modalVideo.pause();
+    if (heroVideo && modalTime > 0 && heroCard && heroCard.classList.contains("has-started")) {
+      try {
+        heroVideo.currentTime = modalTime;
+      } catch {
+        /* ignore seek errors */
+      }
+    }
+    modal.hidden = true;
+    document.body.style.overflow = "";
+    if (lastFocus && typeof lastFocus.focus === "function") {
+      lastFocus.focus({ preventScroll: true });
+    }
+  };
+
+  expandBtn.addEventListener("click", openModal);
+  closeBtn.addEventListener("click", closeModal);
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+  document.addEventListener("keydown", (e) => {
+    if (!modal.hidden) {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        closeModal();
+        return;
+      }
+      if (e.target !== modalVideo && (e.key === "ArrowLeft" || e.key === "ArrowRight")) {
+        e.preventDefault();
+        const delta = e.key === "ArrowRight" ? 5 : -5;
+        const dur = Number.isFinite(modalVideo.duration) ? modalVideo.duration : Infinity;
+        modalVideo.currentTime = Math.max(0, Math.min(dur, (modalVideo.currentTime || 0) + delta));
+      }
+      return;
+    }
+
+    if (
+      heroVideo &&
+      heroCard &&
+      heroCard.classList.contains("has-started") &&
+      e.target !== heroVideo &&
+      heroCard.contains(document.activeElement) &&
+      (e.key === "ArrowLeft" || e.key === "ArrowRight")
+    ) {
+      e.preventDefault();
+      const delta = e.key === "ArrowRight" ? 5 : -5;
+      const dur = Number.isFinite(heroVideo.duration) ? heroVideo.duration : Infinity;
+      heroVideo.currentTime = Math.max(0, Math.min(dur, (heroVideo.currentTime || 0) + delta));
+    }
   });
 }
 

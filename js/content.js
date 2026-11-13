@@ -181,6 +181,9 @@ export const content = {
       localeSwitcher: "Site dili",
       languageChanged: "Dil Türkçe olarak değiştirildi.",
       closeModal: "Görseli kapat",
+      closeTrailerModal: "Fragmanı kapat",
+      playHeroTrailer: "Özel Çay Partisi tanıtım fragmanını oynat",
+      expandHeroTrailer: "Fragmanı sinema modunda büyüt",
       mangaVol1: "Umineko Episode 1 Türkçe Manga Oku",
       mangaVol2: "Umineko Episode 2 Türkçe Manga Oku"
     },
@@ -209,7 +212,11 @@ export const content = {
       lead: "Rokkenjima'daki sekiz oyun tahtasını PS3 seslendirmesi ve 1080p grafiklerle Türkçeye taşıyan yama.",
       sub: "“Aşk olmadan gerçeği göremezsin.” Umineko'nun 1. ve 2. Bölüm mangalarıyla Higurashi serisini çeviren Remilya'dan, görsel romanın Question ve Answer Arcs bölümleri.",
       ctaPrimary: "Kurulum Aracını İndir (v1.0.0)",
+      ctaTrailer: "Fragmanı İzle",
       ctaSecondary: "Kurulum Rehberi",
+      videoPill: "ÖZEL ÇAY PARTİSİ FRAGMANI · 02:08",
+      expandTitle: "Sinema Modu",
+      trailerModalTitle: "Umineko: Martılar Ağladığında · Özel Çay Partisi Fragmanı",
       quickLinks: [
         { label: "Ep. 1 & 2 Manga Çevirisi", href: "#manga-slice", external: false },
         { label: "07th-Mod Ayar Tablosu", href: "#kurulum", external: false },
@@ -495,6 +502,9 @@ export const content = {
       localeSwitcher: "Site language",
       languageChanged: "Language switched to English.",
       closeModal: "Close image preview",
+      closeTrailerModal: "Close trailer",
+      playHeroTrailer: "Play the Special Tea Party patch trailer",
+      expandHeroTrailer: "Expand trailer in theater mode",
       mangaVol1: "Read Umineko Episode 1 Manga in Turkish",
       mangaVol2: "Read Umineko Episode 2 Manga in Turkish"
     },
@@ -523,7 +533,11 @@ export const content = {
       lead: "Turkish patch for the eight game boards on Rokkenjima, built for 07th-Mod with PS3 voices and 1080p graphics.",
       sub: "“Without love, it cannot be seen.” From Remilya, Turkish translator of the Umineko Ep. 1 & Ep. 2 manga and the Higurashi series.",
       ctaPrimary: "Download Installer (v1.0.0)",
+      ctaTrailer: "Watch Trailer",
       ctaSecondary: "Installation Guide",
+      videoPill: "SPECIAL TEA PARTY TRAILER · 02:08",
+      expandTitle: "Theater Mode",
+      trailerModalTitle: "Umineko When They Cry · Special Tea Party Patch Trailer",
       quickLinks: [
         { label: "Ep. 1 & 2 Manga Translation", href: "#manga-slice", external: false },
         { label: "07th-Mod Settings Matrix", href: "#kurulum", external: false },

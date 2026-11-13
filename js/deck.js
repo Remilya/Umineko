@@ -82,7 +82,8 @@ export function initDeck({ slicesSectionId = "hakikat", sliceSteps = 5 } = {}) {
   const getPanelTop = (pi) => (panelMetrics[pi] ? panelMetrics[pi].top : 0);
   const getSlicesAreaSize = () => ({ w: lastAreaW, h: lastAreaH });
   const fits = () => doesFit;
-  const isModalOpen = () => Boolean(document.querySelector(".lightbox[open], .lightbox.is-open"));
+  const isModalOpen = () =>
+    Boolean(document.querySelector(".lightbox:not([hidden]), .lightbox[open], .lightbox.is-open"));
 
   const dots = [];
   if (isReducedMotion()) {
@@ -284,6 +285,7 @@ export function initDeck({ slicesSectionId = "hakikat", sliceSteps = 5 } = {}) {
       tag === "input" ||
       tag === "textarea" ||
       tag === "select" ||
+      tag === "video" ||
       (t && t.isContentEditable)
     ) {
       return;

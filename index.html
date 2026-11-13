@@ -104,9 +104,7 @@
     <link
       rel="preload"
       as="image"
-      href="assets/bea-hero.webp"
-      imagesrcset="assets/bea-hero-440.webp 440w, assets/bea-hero.webp 720w"
-      imagesizes="(max-width: 880px) 220px, 415px"
+      href="assets/umineko-hero-poster.webp"
       fetchpriority="high"
     />
     <link rel="modulepreload" href="main.js" />
@@ -182,6 +180,18 @@
         <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
           <path d="M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5" />
           <path d="M4 18.5v1a1.5 1.5 0 0 0 1.5 1.5h13a1.5 1.5 0 0 0 1.5-1.5v-1" />
+        </g>
+      </symbol>
+      <symbol id="i-play" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M7.5 4.8c0-1.1 1.2-1.8 2.2-1.2l10.6 6.7c.9.6.9 1.9 0 2.5L9.7 19.5c-1 .6-2.2-.1-2.2-1.2V4.8Z"
+        />
+      </symbol>
+      <symbol id="i-expand" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M15 4h5v5M20 4l-6 6" />
+          <path d="M9 20H4v-5M4 20l6-6" />
         </g>
       </symbol>
       <symbol id="i-wedge" viewBox="0 0 24 24">
@@ -350,19 +360,43 @@
           </div>
 
           <div class="hero-art">
-            <div class="mascot-stage">
-              <div class="mascot-card">
-                <span class="mascot-ring" aria-hidden="true"></span>
-                <img
-                  class="mascot-img"
-                  src="assets/bea-hero.webp"
-                  srcset="assets/bea-hero-440.webp 440w, assets/bea-hero.webp 720w"
-                  sizes="(max-width: 880px) 220px, 415px"
-                  alt="Altın Cadı Beatrice"
-                  width="720"
-                  height="720"
-                  fetchpriority="high"
-                />
+            <div class="mascot-stage hero-video-stage">
+              <div class="hero-video-card" id="hero-video-card" data-cursor="lock">
+                <span class="hero-video-ring" aria-hidden="true"></span>
+                <div class="hero-video-frame">
+                  <video
+                    class="hero-video"
+                    id="hero-trailer-video"
+                    playsinline
+                    preload="none"
+                    poster="assets/umineko-hero-poster.webp"
+                    src="assets/umineko-tr-fragman.mp4"
+                  ></video>
+                  <button
+                    type="button"
+                    class="hero-video-play"
+                    id="hero-video-play"
+                    aria-label="Özel Çay Partisi tanıtım fragmanını oynat"
+                  >
+                    <span class="hero-video-play__circle" aria-hidden="true">
+                      <svg viewBox="0 0 24 24"><use href="#i-play" /></svg>
+                    </span>
+                    <span class="hero-video-play__pill" id="hero-video-pill">
+                      ÖZEL ÇAY PARTİSİ FRAGMANI · 02:08
+                    </span>
+                  </button>
+                  <button
+                    type="button"
+                    class="hero-video-expand"
+                    id="hero-video-expand"
+                    aria-haspopup="dialog"
+                    aria-controls="trailer-modal"
+                    aria-label="Fragmanı sinema modunda büyüt"
+                    title="Sinema Modu"
+                  >
+                    <svg aria-hidden="true"><use href="#i-expand" /></svg>
+                  </button>
+                </div>
               </div>
               <div class="mascot-badges" id="hero-badges">
                 <div class="mascot-chip">
@@ -1049,6 +1083,38 @@
         <div class="lightbox__bar">
           <p class="lightbox__cap" id="lightbox-caption"></p>
           <button type="button" class="lightbox__close" id="lightbox-close" aria-label="Görseli kapat">
+            ESC · ×
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cinematic Trailer Theater Modal -->
+    <div
+      class="lightbox trailer-modal"
+      id="trailer-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="trailer-modal-title"
+      hidden
+    >
+      <div class="lightbox__inner trailer-modal__inner" data-cursor="lock">
+        <div class="trailer-modal__stage">
+          <video
+            class="trailer-modal__video"
+            id="trailer-video"
+            controls
+            playsinline
+            preload="none"
+            poster="assets/umineko-hero-poster.webp"
+            src="assets/umineko-tr-fragman.mp4"
+          ></video>
+        </div>
+        <div class="lightbox__bar">
+          <p class="lightbox__cap" id="trailer-modal-title">
+            Umineko: Martılar Ağladığında · Özel Çay Partisi Fragmanı
+          </p>
+          <button type="button" class="lightbox__close" id="trailer-modal-close" aria-label="Fragmanı kapat">
             ESC · ×
           </button>
         </div>
