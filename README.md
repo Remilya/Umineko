@@ -68,7 +68,7 @@ ZIP paketlerini elle indirdiyseniz `Umineko_TR_Kurulum.exe` ile aynı klasöre k
 | **2. Bölüm** | *Turn of the Golden Witch* | 21 / 21 | `14.736` segment | `59` Kırmızı | Tamamlandı |
 | **3. Bölüm** | *Banquet of the Golden Witch* | 21 / 21 | `17.110` segment | `82` Kırmızı | Tamamlandı |
 | **4. Bölüm** | *Alliance of the Golden Witch* | 22 / 22 | `20.749` segment | `112` Kırmızı, `121` Mavi | Tamamlandı |
-| **Görseller + Font** | Menü, ipucu, karakter kartları, fontlar ve kapanışlar | `898` dosya | Arayüz, kartlar ve hibrit fontlar | Yok | Tamamlandı |
+| **Görseller + Font** | Menü, ipucu, karakter kartları, CG'ler, fontlar ve kapanışlar | `912` dosya | Arayüz, kartlar, CG'ler ve hibrit fontlar | Yok | Tamamlandı |
 | **Toplam** | **Question Arcs (1-4. Bölümler)** | **84 bölüm** | **`67.287` segment** | **`253` Kırmızı, `121` Mavi** | **%100** |
 
 ### Cevap Arkları (*Answer Arcs / Chiru*)
@@ -79,7 +79,7 @@ ZIP paketlerini elle indirdiyseniz `Umineko_TR_Kurulum.exe` ile aynı klasöre k
 | **6. Bölüm** | *Dawn of the Golden Witch* | 21 / 21 | `16.304` segment | `166` Kırmızı, `60` Mavi, `2` Altın | Tamamlandı |
 | **7. Bölüm** | *Requiem of the Golden Witch* | 21 / 21 | `15.204` segment | `10` Kırmızı, `3` Mavi | Tamamlandı |
 | **8. Bölüm** | *Twilight of the Golden Witch* | 20 / 20 | `15.745` segment | `34` Kırmızı, `12` Mavi, `98` Mor | Tamamlandı |
-| **Görseller + Font** | Bulmacalar, gizem tahtası, arayüz, fontlar ve kapanışlar | `668` dosya | Arayüz, bulmacalar ve hibrit fontlar | Yok | Tamamlandı |
+| **Görseller + Font** | Bulmacalar, gizem tahtası, anı CG'leri, arayüz, fontlar ve kapanışlar | `715` dosya | Arayüz, bulmacalar, CG'ler ve hibrit fontlar | Yok | Tamamlandı |
 | **Toplam** | **Answer Arcs / Chiru (5-8. Bölümler)** | **80 bölüm** | **`63.125` segment** | **`541` Kırmızı, `318` Mavi, `3` Altın, `98` Mor** | **%100** |
 
 ## Çeviri ve Görsel Uyarlama Notları
